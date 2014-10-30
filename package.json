@@ -37,5 +37,8 @@
     "metalsmith": "^1.0.1",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-templates": "^0.6.0"
+  },
+  "dependencies": {
+    "gulp-clean": "^0.3.1"
   }
 }
