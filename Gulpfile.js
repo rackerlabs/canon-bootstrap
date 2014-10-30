@@ -50,6 +50,11 @@ gulp.task('documentation', ['build'], function (done) {
       gulp.src('build/**/*')
         .pipe(gulp.dest('docs/build'))
         .on('end', done);
+    },
+    assets:function(done) {
+      gulp.src('docs/assets/**/*')
+      .pipe(gulp.dest('docs/build/assets'))
+      .on('end', done);
     }
   }, done);
 });

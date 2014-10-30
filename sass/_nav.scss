@@ -1,0 +1,96 @@
+
+
+
+
+@mixin navbarPrimaryStylesMixin($navbar-height, $navbar-font-size) {
+    @include noise();
+    @include seam();
+
+    height:$navbar-height;
+    
+    margin:0;
+
+    .navbar-text {
+        color: $navbar-primary-default-color;
+    }
+
+    .navbar-brand {
+        padding: $navbar-padding-vertical $navbar-padding-horizontal;
+        font-size: $navbar-font-size;
+        height: $navbar-height;
+    }
+
+    .navbar-nav {
+        >li {
+            margin-top: (($navbar-height - $line-height-computed) / 2);
+            margin-bottom: (($navbar-height - $line-height-computed) / 2);
+        }
+        > li > a {
+            padding-top:    0px;
+            padding-bottom: 0px;
+            font-size:$navbar-font-size;
+        }
+        > li > a {
+            color: $navbar-primary-link-color;
+            // font-family: $alt-font-family;
+            text-decoration: none;
+            text-shadow: 0 1px #fff;
+            position: relative;
+
+            &:hover,
+            &:focus {
+                color: $navbar-primary-link-hover-color;
+                background-color: transparent;
+            }
+        }
+        > .active > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $navbar-primary-link-active-color;
+                background-color: $navbar-primary-link-active-bg;
+            }
+        }
+        > .disabled > a {
+            &,
+            &:hover,
+            &:focus {
+                color: $navbar-primary-link-disabled-color;
+                background-color: $navbar-primary-link-disabled-bg;
+            }
+        }
+    }
+}
+
+
+
+
+
+.navbar-primary {
+    @include navbarPrimaryStylesMixin($navbar-primary-height, $navbar-primary-font-size);
+    z-index:2000;
+}
+
+
+
+
+.navbar-secondary {
+    @include navbarPrimaryStylesMixin($navbar-secondary-height, $navbar-secondary-font-size);
+    z-index:1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

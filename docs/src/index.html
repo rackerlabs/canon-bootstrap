@@ -1,0 +1,124 @@
+---
+title: Canon Bootstrap
+description: Canon Skins for Twitter Bootstrap
+template: layout.html
+---
+
+<div class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
+
+    <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/signup">Sign up</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><p class="navbar-text">Hello user</p> </li>
+        <li><a href="/settings"><span class="glyphicon glyphicon-cog"></span></a></li>
+        <li><a href="" ng-click="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="navbar navbar-primary navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="/" class="navbar-brand" style="background:url('../../assets/logo.png') center center no-repeat; width:164px;"></a>
+      </div>
+      <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+
+        <ul class="nav navbar-nav">
+          <li ng-repeat="item in menu" class="active">
+            <a ng-href="">Servers</a>
+          </li>
+          <li><a href="">Load Balancers</a></li>
+          <li><a href="">Dedicated</a></li>
+          <li><a href="">Managed</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        </div>
+    </div>
+  </div>
+
+
+
+  <div class="navbar navbar-secondary navbar-static-top">
+    <div class="container-fluid">
+      <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+
+        <ul class="nav navbar-nav">
+          <li ng-repeat="item in menu" class="active">
+            <a ng-href="{{item.link}}">submenu 1</a>
+          </li>
+          <li ng-repeat="item in menu">
+            <a ng-href="{{item.link}}">submenu 2</a>
+          </li>
+          <li ng-repeat="item in menu">
+            <a ng-href="{{item.link}}">submenu 3</a>
+          </li>
+          <li ng-repeat="item in menu">
+            <a ng-href="{{item.link}}">submenu 4</a>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row documentation-row">
+  <div class="col-sm-12">
+    <h1>Typography <span class="glyphicon glyphicon-search"></span></h1>
+    <div class="documentation-example">
+      <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+      <p class="lead">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+      <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+      <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+      <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ul>
+      <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+      <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ol>
+      <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+      <ul class="list-unstyled">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ul>
+      <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+      <ul class="list-inline">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ul>
+    </div>
+  </div>
+</div>
