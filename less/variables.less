@@ -13,7 +13,7 @@
 @brand-info: #5bc0de;
 @brand-warning: #ff9d00;
 @brand-danger: #c40022;
-/**/
+
 // scaffolding
 
 @body-bg: #eee;
@@ -39,17 +39,43 @@
 @icon-font-path: @font-path;
 
 // navbar
-@grid-float-breakpoint: 1000px;
-@navbar-height: 40px;
-@navbar-margin-bottom: 0;
-@navbar-border-radius: 0;
-@navbar-default-bg: @gray-darker;
-@navbar-default-link-color: @gray;
-@navbar-default-link-hover-color: @gray-lighter;
-@navbar-default-link-active-color: #fff;
-@navbar-default-link-active-bg: transparent;
-@navbar-default-link-disabled-color: @gray-dark;
 
+@navbar-border-radius: 0;
+@navbar-default-color: #888;
+@navbar-default-bg: transparent;
+@navbar-default-border: #f5f5f5;
+@navbar-default-link-color: #888;
+@navbar-default-link-hover-color: #333;
+@navbar-default-link-hover-bg: transparent;
+@navbar-default-link-active-color: #c40022;
+@navbar-default-link-active-bg: transparent;
+@navbar-default-link-disabled-color: #bbb;
+@navbar-default-link-disabled-bg: transparent;
+@navbar-default-brand-color: @navbar-default-link-color;
+@navbar-default-brand-hover-color: @navbar-default-link-hover-color;
+@navbar-default-brand-hover-bg: transparent;
+@navbar-default-toggle-hover-bg: #ddd;
+@navbar-default-toggle-icon-bar-bg: #666;
+@navbar-default-toggle-border-color: #aaa;
+
+// navbar (inverse)
+
+@navbar-inverse-color: #ccc;
+@navbar-inverse-bg: #333;
+@navbar-inverse-border: transparent;
+@navbar-inverse-link-color: #ccc;
+@navbar-inverse-link-hover-color: #fff;
+@navbar-inverse-link-hover-bg: transparent;
+@navbar-inverse-link-active-color: #fff;
+@navbar-inverse-link-active-bg: transparent;
+@navbar-inverse-link-disabled-color: #999;
+@navbar-inverse-link-disabled-bg: transparent;
+@navbar-inverse-brand-color: #ccc;
+@navbar-inverse-brand-hover-color: #fff;
+@navbar-inverse-brand-hover-bg: transparent;
+@navbar-inverse-toggle-hover-bg: 0;
+@navbar-inverse-toggle-icon-bar-bg: 0;
+@navbar-inverse-toggle-border-color: 0;
 
 // popovers
 @popover-max-width: 700px;
@@ -95,24 +121,5 @@
 // fonts
 
 @font-path: '../fonts/';
-@header-font-path: @font-path;
 @header-font-name: 'SourceSansPro-Semibold-webfont';
 @header-font-svg-id: 'SourceSansProSemibold';
-
-// nav (primary)
-@navbar-primary-height: 70px;
-@navbar-primary-font-size: @font-size-large;
-@navbar-primary-font-weight: 600;
-@navbar-primary-default-color: @gray;
-@navbar-primary-link-color: @gray;
-@navbar-primary-link-hover-color: @gray-dark;
-@navbar-primary-link-hover-bg: transparent;
-@navbar-primary-link-active-color: @brand-danger;
-@navbar-primary-link-active-bg: transparent;
-@navbar-primary-link-disabled-color: @gray-dark;
-@navbar-primary-link-disabled-bg: transparent;
-
-// nav (secondary)
-
-@navbar-secondary-height: 35px;
-@navbar-secondary-font-size: 14px;

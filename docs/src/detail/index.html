@@ -4,65 +4,6 @@ description: Canon Servers
 template: detail.html
 ---
 
-<nav class="navbar navbar-primary">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#rs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <i class="fa fa-bars fa-2x"></i>
-      </button>
-      <a href="/" class="navbar-brand" style="background:url('../../assets/logo.png') center center no-repeat; min-width:164px;"></a>
-    </div>
-    <div collapse="isCollapsed" class="navbar-collapse collapse" id="rs-example-navbar-collapse-1">
-
-      <ul class="nav navbar-nav navbar-left">
-        <li class="active"><a href="#">Servers</a></li>
-        <li><a href="#">Storage</a></li>
-        <li><a href="#">Networking</a></li>
-        <li><a href="#">Databases</a></li>
-        <li><a href="#">Orchestration</a></li>
-        <li><a href="#">Backup</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-</nav>
-
-<nav class="navbar navbar-secondary navbar-collapse collapse" collapse="isCollapsed">
-  <div class="container-fluid">
-    <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
-
-      <ul class="nav navbar-nav">
-        <li ng-repeat="item in menu" class="active">
-          <a ng-href="{{item.link}}">submenu 1</a>
-        </li>
-        <li ng-repeat="item in menu">
-          <a ng-href="{{item.link}}">submenu 2</a>
-        </li>
-        <li ng-repeat="item in menu">
-          <a ng-href="{{item.link}}">submenu 3</a>
-        </li>
-        <li ng-repeat="item in menu">
-          <a ng-href="{{item.link}}">submenu 4</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
 <div class="row">
 
   <div class="col-md-9">
@@ -395,5 +336,3 @@ template: detail.html
   </div>
 
 </div>
-
-
