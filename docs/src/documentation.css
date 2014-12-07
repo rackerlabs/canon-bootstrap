@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .cbs-nav {
   margin-top: 20px;
   margin-left: -15px;
