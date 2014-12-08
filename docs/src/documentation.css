@@ -8,6 +8,10 @@ body {
   margin-right: 15px;
 }
 
+.cbs-nav-documentation.affix {
+  top: 20px;
+}
+
 .cbs-nav-documentation > li > a {
   padding: 3px 15px;
   color: #999;
