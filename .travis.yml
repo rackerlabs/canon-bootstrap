@@ -2,7 +2,9 @@ language: node_js
 node_js:
 - '0.10'
 - '0.11'
-script: npm run build
+script:
+- npm run build
+- npm run documentation
 notifications:
   email: false
   irc: chat.freenode.net#canon-dev

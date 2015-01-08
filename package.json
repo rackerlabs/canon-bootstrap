@@ -22,8 +22,8 @@
   },
   "scripts": {
     "build": "gulp build",
-    "start": "gulp server",
-    "doc": "gulp doc"
+    "documentation": "gulp documentation",
+    "start": "gulp server"
   },
   "devDependencies": {
     "async": "^0.9.0",
