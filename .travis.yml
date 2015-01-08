@@ -8,6 +8,8 @@ script:
 cache:
   directories:
   - node_modules
+after_success:
+  - scripts/deploy-documentation
 notifications:
   email: false
   irc: chat.freenode.net#canon-dev

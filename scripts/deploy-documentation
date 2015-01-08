@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+set -e
+
+BRANCH='gh-pages'
+REPOSITORY=`mktemp -d /tmp/canon-bootstrap.XXXXXX`
+DOCUMENTATION='docs/build/'
+
+# Prevent builds to branches other than master.
+
+echo "==> Verifying build environment..."
+
+# Verify existence of environment variables.
+
+if [ ! -d $DOCUMENTATION ]; then
+  # Red
+  echo "Documentation does not exist. Failing deploy!"
+  exit 1
+fi
+
+echo "==> Syncing updated documentation..."
+git clone --branch $BRANCH https://$GH_TOKEN@github.com/rackerlabs/canon-bootstrap $REPOSITORY
+rsync -rt --del --exclude=".git" $DOCUMENTATION $REPOSITORY
+
+echo "==> Pushing updated documentation to GitHub Pages..."
+cd $REPOSITORY
+
+if [ -z "$(git status --porcelain)" ]; then
+  # Green
+  echo "No documentation changes to publish!"
+  exit 0
+fi
+
+git add --all
+git config user.name $GH_USER
+git config user.email $GH_USER@rackspace.com
+git commit --message "docs(travis): publish documentation for $TRAVIS_COMMIT"
+git push origin gh-pages
+
+# Green
+echo "Successfully published documentation for $TRAVIS_COMMIT!"
