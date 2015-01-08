@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>{{ title }}</title>
+
+  <meta name="description" content="{{ description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/css/canon-bootstrap.css">
+  <link rel="stylesheet" href="/documentation.css">
+</head>
+<body data-spy="scroll" data-target="#sidebar">
+  <header class="navbar navbar-utility navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Canon Bootstrap</a>
+      </div>
+      <nav>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Documentation</a></li>
+          <li><a href="/demo/">Demo</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://github.com/rackerlabs/canon-bootstrap">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="container">
+    {{{ contents }}}
+  </section>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
