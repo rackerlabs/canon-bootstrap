@@ -5,6 +5,9 @@ node_js:
 script:
 - npm run build
 - npm run documentation
+cache:
+  directories:
+  - node_modules
 notifications:
   email: false
   irc: chat.freenode.net#canon-dev
