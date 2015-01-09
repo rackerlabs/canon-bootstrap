@@ -8,3 +8,4 @@ script:
 notifications:
   email: false
   irc: chat.freenode.net#canon-dev
+sudo: false
