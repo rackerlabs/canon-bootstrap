@@ -14,11 +14,24 @@ error() {
   echo -e "\033[31;1m$1"
 }
 
-# Prevent builds to branches other than master.
-
 echo "==> Verifying build environment..."
 
-# Verify existence of environment variables.
+# Prevent builds to branches other than master.
+
+if [ -z "$GH_USER" ]; then
+  error "Environment variable GH_USER does not exist. Stopping deploy."
+  exit 1
+fi
+
+if [ -z "$GH_TOKEN" ]; then
+  error "Environment variable GH_TOKEN does not exist. Stopping deploy."
+  exit 1
+fi
+
+if [ -z "$TRAVIS_COMMIT" ]; then
+  error "Environment variable TRAVIS_COMMIT does not exist. Stopping deploy."
+  exit 1
+fi
 
 if [ ! -d $DOCUMENTATION ]; then
   error "Documentation does not exist. Stopping deploy."
@@ -43,5 +56,4 @@ git config user.email $GH_USER@rackspace.com
 git commit --message "docs(travis): publish documentation for $TRAVIS_COMMIT"
 git push origin gh-pages
 
-# Green
 success "Successfully published documentation for $TRAVIS_COMMIT!"
