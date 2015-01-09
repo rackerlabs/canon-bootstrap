@@ -6,6 +6,14 @@ BRANCH='gh-pages'
 REPOSITORY=`mktemp -d /tmp/canon-bootstrap.XXXXXX`
 DOCUMENTATION='docs/build/'
 
+success() {
+  echo -e "\033[32;1m$1"
+}
+
+error() {
+  echo -e "\033[31;1m$1"
+}
+
 # Prevent builds to branches other than master.
 
 echo "==> Verifying build environment..."
@@ -13,8 +21,7 @@ echo "==> Verifying build environment..."
 # Verify existence of environment variables.
 
 if [ ! -d $DOCUMENTATION ]; then
-  # Red
-  echo "Documentation does not exist. Failing deploy!"
+  error "Documentation does not exist. Stopping deploy."
   exit 1
 fi
 
@@ -26,9 +33,8 @@ echo "==> Pushing updated documentation to GitHub Pages..."
 cd $REPOSITORY
 
 if [ -z "$(git status --porcelain)" ]; then
-  # Green
-  echo "No documentation changes to publish!"
-  exit 0
+  success "No documentation changes to publish. Skipping deploy."
+  exit 1
 fi
 
 git add --all
@@ -38,4 +44,4 @@ git commit --message "docs(travis): publish documentation for $TRAVIS_COMMIT"
 git push origin gh-pages
 
 # Green
-echo "Successfully published documentation for $TRAVIS_COMMIT!"
+success "Successfully published documentation for $TRAVIS_COMMIT!"
