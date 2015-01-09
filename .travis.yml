@@ -11,4 +11,8 @@ cache:
 notifications:
   email: false
   irc: chat.freenode.net#canon-dev
+env:
+  global:
+  - secure: sbEm4bVUV6Iw3cWMh2MSGw/hHCLWvExj/INlfx2vdGvFJ1STdnPJXd8dL+gBbHOwSoCoJ7OIZJ56jirHCCW3ZOHNGrJHUSHR3E47MA8HhHWZavvwCR4RkAvizkpFn+E43i5CweoKXzfXmLZSRpYeNa6j+PgNn+nQGIbC7huKh9A=
+  - secure: gH+Zm0ScQaCwF1GD7S2CI7yVoyPP8lAiNKvFFgLi/sx/Qo9gpTy2Hfoev3M3Jp9Nz4jVXaOhc+8wM9IHL/MWs0gWf+R3no4Yw/FB2hh6b3/oVPjsWeqwJKfXC/k7MPqud2u1Cm0qWHR0DWlxi1OrPw5P+ISV7qsKPKG+8gbgMtA=
 sudo: false
