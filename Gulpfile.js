@@ -6,7 +6,9 @@ var minifyCSS = require('gulp-minify-css');
 var less = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
-
+var argv = require('yargs')
+  .default('baseUri', '/')
+  .argv;
 
 function error(e) {
   util.log(e.toString());
@@ -84,6 +86,7 @@ gulp.task('documentation', ['build'], function (done) {
   async.series({
     metalsmith: function (done) {
       metalsmith(join(__dirname, 'docs'))
+        .metadata({ baseUri: argv.baseUri })
         .use(markdown())
         .use(templates('handlebars'))
         .build(done);
