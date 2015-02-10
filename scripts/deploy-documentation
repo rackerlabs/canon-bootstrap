@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+
+set -e
+
+BRANCH='gh-pages'
+REPOSITORY=`mktemp -d /tmp/canon-bootstrap.XXXXXX`
+DOCUMENTATION='docs/build/'
+
+success() {
+  echo -e "\033[32;1m$1"
+}
+
+error() {
+  echo -e "\033[31;1m$1"
+}
+
+echo "==> Verifying build environment..."
+
+if [ -z "$GH_USER" ]; then
+  error "Environment variable GH_USER does not exist. Stopping deploy."
+  exit 1
+fi
+
+if [ -z "$GH_TOKEN" ]; then
+  error "Environment variable GH_TOKEN does not exist. Stopping deploy."
+  exit 1
+fi
+
+if [ -z "$TRAVIS_BRANCH" ]; then
+  error "Environment variable TRAVIS_BRANCH does not exist. Stopping deploy."
+  exit 1
+fi
+
+if [ -z "$TRAVIS_COMMIT" ]; then
+  error "Environment variable TRAVIS_COMMIT does not exist. Stopping deploy."
+  exit 1
+fi
+
+if [ ! -d $DOCUMENTATION ]; then
+  error "Documentation does not exist. Stopping deploy."
+  exit 1
+fi
+
+echo "==> Syncing updated documentation..."
+git clone --branch $BRANCH https://$GH_TOKEN@github.com/rackerlabs/canon-bootstrap $REPOSITORY
+rsync -rt --del --exclude=".git" $DOCUMENTATION $REPOSITORY
+
+echo "==> Pushing updated documentation to GitHub Pages..."
+cd $REPOSITORY
+
+if [ "$TRAVIS_BRANCH" != "master" ]; then
+  success "Not building master branch. Skipping deploy."
+  exit 0
+fi
+
+if [ -z "$(git status --porcelain)" ]; then
+  success "No documentation changes to publish. Skipping deploy."
+  exit 0
+fi
+
+git add --all
+git config user.name $GH_USER
+git config user.email $GH_USER@rackspace.com
+git commit --message "docs(travis): publish documentation for $TRAVIS_COMMIT"
+git push origin gh-pages
+
+success "Successfully published documentation for $TRAVIS_COMMIT!"

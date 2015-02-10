@@ -22,8 +22,8 @@
   },
   "scripts": {
     "build": "gulp build",
-    "start": "gulp server",
-    "doc": "gulp doc"
+    "documentation": "gulp documentation",
+    "start": "gulp server"
   },
   "devDependencies": {
     "async": "^0.9.0",
@@ -38,7 +38,8 @@
     "handlebars": "^2.0.0",
     "metalsmith": "^1.0.1",
     "metalsmith-markdown": "^0.2.1",
-    "metalsmith-templates": "^0.6.0"
+    "metalsmith-templates": "^0.6.0",
+    "yargs": "^2.3.0"
   },
   "dependencies": {
     "bootstrap": "^3.3.0",
