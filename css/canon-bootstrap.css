@@ -9226,6 +9226,14 @@ nav .pagination {
   padding: 5px 10px;
   margin-right: -1px;
 }
+.nav-tabs > li > a i,
+.nav-tabs.nav-justified > li > a i,
+.nav-tabs > li > a small,
+.nav-tabs.nav-justified > li > a small,
+.nav-tabs > li > a span,
+.nav-tabs.nav-justified > li > a span {
+  line-height: 1;
+}
 .nav-tabs > li > a small,
 .nav-tabs.nav-justified > li > a small {
   color: #999;
