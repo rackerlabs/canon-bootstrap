@@ -5140,7 +5140,7 @@ a.thumbnail.active {
   height: 20px;
   margin-bottom: 20px;
   background-color: #f5f5f5;
-  border-radius: 4px;
+  border-radius: 0;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -9215,6 +9215,16 @@ nav .pagination {
   border-radius: 0;
   border: 0;
   background-color: transparent;
+}
+.progress {
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 1px #fff;
+  padding: 1px;
+}
+.progress-bar {
+  box-shadow: 0px 0 0px 1px #fff;
+  line-height: 18px;
 }
 .nav-tabs > li > a,
 .nav-tabs.nav-justified > li > a {
