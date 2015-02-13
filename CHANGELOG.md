@@ -21,3 +21,13 @@
 - Add canon styled tooltips
 - Add navbar-secondary
 
+## v0.4.0 (February 13, 2015)
+
+- Add canon styled tabs [https://github.com/rackerlabs/canon-bootstrap/pull/53](#53)
+- Add canon styled progress bars [https://github.com/rackerlabs/canon-bootstrap/pull/55](#55)
+- Update canon dropdown styles, add primary nav style [https://github.com/rackerlabs/canon-bootstrap/pull/57](#57)
+- Fix ul/ol padding [https://github.com/rackerlabs/canon-bootstrap/pull/58](#58)
+- Add canon styled popovers [https://github.com/rackerlabs/canon-bootstrap/pull/59](#59)
+- Pin boostrap/fontawesome to a specific version
+- Updated to Bootstrap 3.3.2
+- Updated FontAwesome to 4.3.0

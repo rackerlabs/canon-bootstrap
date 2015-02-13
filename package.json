@@ -1,6 +1,6 @@
 {
   "name": "canon-bootstrap",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "license": "MIT",
   "homepage": "https://github.com/rackerlabs/canon-bootstrap",
   "description": "Canon Bootstrap is a theme for Twitter Bootstrap based on Canon's visual design.",
@@ -42,7 +42,7 @@
     "yargs": "^2.3.0"
   },
   "dependencies": {
-    "bootstrap": "^3.3.0",
-    "font-awesome": "^4.2.0"
+    "bootstrap": "3.3.2",
+    "font-awesome": "4.3.0"
   }
 }
