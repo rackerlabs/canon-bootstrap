@@ -13,11 +13,11 @@ based on [Canon](http://rackerlabs.github.io/canon/)'s visual design.
 
 Quickly install canon-bootstrap using Bower:
 
-- bower: `bower install canon-boostrap`
+- bower: `bower install canon-bootstrap`
 
 The installed package includes the entire Bootstrap source, Glyphicons, and all
-theme-specific customizations. We provide compiled CSS (`canon-boostrap.css`)
-along with minified CSS (`canon-boostrap.min.css`).
+theme-specific customizations. We provide compiled CSS (`canon-bootstrap.css`)
+along with minified CSS (`canon-bootstrap.min.css`).
 
 ## Contributing
 
