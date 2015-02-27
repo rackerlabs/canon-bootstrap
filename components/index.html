@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Canon Components | Canon Bootstrap</title>
+
+  <meta name="description" content="Canon Components">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="stylesheet" href="http://cd0561583af076c5d1bb-b0a668e5876bef6fe25684caf71db405.r89.cf1.rackcdn.com/v1-latest/canon.min.css"> -->
+  <link rel="stylesheet" href="/css/canon-bootstrap.css">
+</head>
+<body>
+  <div collapse="isCollapsed" class="navbar navbar-utility navbar-inverse navbar-collapse collapse" role="navigation">
+    <div class="container">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="/">MyRackspace</a></li>
+          <li><a href="/demo">Demo</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Support</a></li>
+          <li class="dropdown">
+            <a href class="dropdown-toggle" data-toggle="dropdown">
+              Account: rackspacecanon <i class="fa fa-angle-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-inverse dropdown-menu-right" role="menu">
+              <li>
+                <a href="#">
+                  Account # 123456
+                </a>
+              </li>
+              <li role="presentation" class="divider"></li>
+              <li>
+                <a href="#">
+                  External Link <i class="fa fa-external-link"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Link
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Link <span class="dropdown-caption">With Caption</span>
+                </a>
+              </li>
+              <li role="presentation" class="divider"></li>
+              <li>
+                <a href="#">Log Out</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-primary">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#rs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <a href="/" class="navbar-brand" style="background:url('../../assets/logo.png') center center no-repeat; min-width:164px;"></a>
+      </div>
+      <div collapse="isCollapsed" class="navbar-collapse collapse" id="rs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-left">
+          <li class="active"><a href="#">Servers</a></li>
+          <li><a href="#">Storage</a></li>
+          <li><a href="#">Networking</a></li>
+          <li><a href="#">Databases</a></li>
+          <li><a href="#">Orchestration</a></li>
+          <li><a href="#">Backup</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-secondary navbar-collapse collapse" collapse="isCollapsed">
+    <div class="container">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="active"><a href="#">Cloud Servers</a></li>
+        <li><a href="#">Saved Images</a></li>
+        <li><a href="#">Networks</a></li>
+        <li><a href="#">SSH Keys</a></li>
+        <li><a href="#">Block Storage</a></li>
+        <li><a href="#">Storage Snapshots</a></li>
+        <li><a href="#">Orchestration</a></li>
+        <li><a href="#">Auto Scale</a></li>
+        <li><a href="#">Big Data</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container clearfix">
+    
+<div class="row">
+  <div class="col-md-12">
+    <div class="rs-main rs-panel">
+      <div class="panel panel-section">
+        <div class="panel-heading">
+          <h1 class="panel-title">Components</h1>
+        </div>
+
+        <div class="panel-body">
+          <h3>Buttons</h3>
+          <p>
+            <a class="btn btn-default">Click Me</a>
+            <a class="btn btn-primary">Something Important</a>
+            <a class="btn btn-info">Info Button</a>
+            <a class="btn btn-warning">Careful!</a>
+          </p>
+          <p>
+            In Canon, a red button is used for logging in, and not for dangerous
+            actions. Use <code>.btn .btn-login</code> for a login button.
+          </p>
+          <a class="btn btn-login">Log In</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+  <script src="/assets/jquery-1.11.1.min.js"></script>
+  <script src="/assets/bootstrap.min.js"></script>
+
+
+<script>
+
+
+ $('*[data-toggle="tooltip"]').tooltip({
+    container:"body"
+  });
+
+var popoverContent = $('#popover-content').html();
+
+$('*[data-toggle="popover"]').popover({
+    container:"body",
+    content:popoverContent,
+    html:true
+  });
+</script>
+</body>
+</html>
