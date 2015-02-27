@@ -1,9 +1,14 @@
+.btn-login {
+  .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
+}
+
 .btn-default,
 .btn-primary,
 .btn-success,
 .btn-info,
 .btn-warning,
-.btn-danger {
+.btn-danger,
+.btn-login {
   border-radius: 3px;
   text-shadow: 0 1px rgba(0, 0, 0, 0.1);
 }
@@ -133,7 +138,8 @@
   }
 }
 
-.btn-danger {
+.btn-danger,
+.btn-login {
   background-color: #C40021;
   background-image: linear-gradient(to bottom, #D8002A, #C40021);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, .3),
