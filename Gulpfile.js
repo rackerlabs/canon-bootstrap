@@ -6,6 +6,7 @@ var minifyCSS = require('gulp-minify-css');
 var less = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
+var shell = require('gulp-shell');
 var argv = require('yargs')
   .default('baseUri', '/')
   .argv;
@@ -103,6 +104,13 @@ gulp.task('documentation', ['build'], function (done) {
     }
   }, done);
 });
+
+gulp.task('serve', shell.task([
+    'sudo npm install',
+    'bower install',
+    'gulp serve'
+  ], {cwd: './docs'})
+);
 
 gulp.task('server', ['documentation'], function () {
   var webserver = require('gulp-webserver');
