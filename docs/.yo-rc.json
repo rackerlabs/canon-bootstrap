@@ -60,5 +60,30 @@
         "module": null
       }
     }
+  },
+  "generator-ng-component": {
+    "routeDirectory": "src/app/",
+    "directiveDirectory": "src/app/",
+    "filterDirectory": "src/app/",
+    "serviceDirectory": "src/app/",
+    "basePath": "src",
+    "moduleName": "app",
+    "filters": [
+      "uirouter"
+    ],
+    "extensions": [
+      "js",
+      "html",
+      "less"
+    ],
+    "directiveSimpleTemplates": "",
+    "directiveComplexTemplates": "",
+    "filterTemplates": "",
+    "serviceTemplates": "",
+    "factoryTemplates": "",
+    "controllerTemplates": "",
+    "decoratorTemplates": "",
+    "providerTemplates": "",
+    "routeTemplates": ""
   }
 }
