@@ -1,7 +1,12 @@
 'use strict';
 
-angular.module('docs')
-  .controller('MainCtrl', function ($scope) {
+angular.module('docs').controller('MainCtrl', MainCtrl);
+
+MainCtrl.$inject = ['$scope', 'nav'];
+
+function MainCtrl($scope, nav) {
+    $scope.title = nav.topnav[0].title;
+    $scope.subtitle = nav.topnav[0].subtitle;
     $scope.awesomeThings = [
       {
         'title': 'AngularJS',
@@ -61,4 +66,4 @@ angular.module('docs')
     angular.forEach($scope.awesomeThings, function(awesomeThing) {
       awesomeThing.rank = Math.random();
     });
-  });
+  };

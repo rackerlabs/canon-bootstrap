@@ -1,7 +1,10 @@
 'use strict';
 
-angular.module('docs', ['ngResource', 'ui.router'])
-  .config(function ($stateProvider, $urlRouterProvider) {
+angular.module('docs', ['ngResource', 'ui.router', 'ngSanitize']).config(IndexConfig);
+
+IndexConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
+
+function IndexConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
       .state('home', {
         url: '/',
@@ -10,5 +13,6 @@ angular.module('docs', ['ngResource', 'ui.router'])
       });
 
     $urlRouterProvider.otherwise('/');
-  })
-;
+
+    $locationProvider.html5Mode(true);
+}
