@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('docs')
+/*angular.module('docs')
   .config(function ($stateProvider) {
     $stateProvider
       .state('main', {
@@ -8,4 +8,4 @@ angular.module('docs')
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
       });
-  });
+  });*/

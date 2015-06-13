@@ -7,12 +7,12 @@ IndexConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvide
 function IndexConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
       .state('home', {
-        url: '/',
+        url: '/home',
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
       });
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/home');
 
-    $locationProvider.html5Mode(true);
+    //$locationProvider.html5Mode(true);
 }
