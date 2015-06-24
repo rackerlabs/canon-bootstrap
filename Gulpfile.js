@@ -80,6 +80,7 @@ gulp.task('build:fonts', function (done) {
 gulp.task('documentation', ['build'], function (done) {
   var join = require('path').join;
   var metalsmith = require('metalsmith');
+  var collections = require('metalsmith-collections');
   var markdown = require('metalsmith-markdown');
   var templates = require('metalsmith-templates');
 
@@ -88,6 +89,7 @@ gulp.task('documentation', ['build'], function (done) {
       metalsmith(join(__dirname, 'docs'))
         .metadata({ baseUri: argv.baseUri })
         .use(markdown())
+        .use(collections())
         .use(templates('handlebars'))
         .build(done);
     },
