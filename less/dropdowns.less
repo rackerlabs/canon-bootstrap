@@ -21,6 +21,16 @@
       text-decoration: underline;
     }
   }
+
+  > li > span {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: @line-height-base;
+    color: @dropdown-link-color;
+    white-space: nowrap; // prevent links from randomly breaking onto new lines
+  }
 }
 
 // .rs-dropdown-caption
@@ -38,7 +48,8 @@
   background-color: #333;
 
   .dropdown-header,
-  > li > a {
+  > li > a,
+  > li > span {
     padding: 2px 15px;
   }
 
@@ -58,6 +69,13 @@
       color: #fff;
       text-decoration: none;
     }
+  }
+
+  > li > span {
+    color: #ccc;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    .font-smoothing;
   }
 
   > .divider {
