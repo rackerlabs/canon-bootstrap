@@ -8740,6 +8740,15 @@ ol {
 .dropdown-menu > li > a:hover {
   text-decoration: underline;
 }
+.dropdown-menu > li > span {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.54;
+  color: #1e6ec1;
+  white-space: nowrap;
+}
 .dropdown-caption {
   display: block;
   color: #999;
@@ -8753,7 +8762,8 @@ ol {
   background-color: #333;
 }
 .dropdown-inverse.dropdown-menu .dropdown-header,
-.dropdown-inverse.dropdown-menu > li > a {
+.dropdown-inverse.dropdown-menu > li > a,
+.dropdown-inverse.dropdown-menu > li > span {
   padding: 2px 15px;
 }
 .navbar-nav > li > .dropdown-inverse.dropdown-menu {
@@ -8771,6 +8781,13 @@ ol {
   background-color: #444;
   color: #fff;
   text-decoration: none;
+}
+.dropdown-inverse.dropdown-menu > li > span {
+  color: #ccc;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .dropdown-inverse.dropdown-menu > .divider {
   background-color: #000;
