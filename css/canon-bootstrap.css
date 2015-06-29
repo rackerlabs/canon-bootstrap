@@ -3445,7 +3445,7 @@ tbody.collapse.in {
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
-  color: #cccccc;
+  color: #666666;
 }
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
@@ -8794,6 +8794,9 @@ ol {
   border-bottom: 1px solid #434343;
   height: 2px;
   margin: 5px 0;
+}
+.dropdown-inverse.dropdown-menu > li.disabled > a {
+  color: #666666;
 }
 .navbar-primary .dropdown-menu {
   border: none;
