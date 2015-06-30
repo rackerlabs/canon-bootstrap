@@ -1,6 +1,7 @@
 ---
 title: Detail View
 id: detail-view
+index: 4
 collection: ux-patterns
 ---
 <h1 id="detail-view">Detail View</h1>

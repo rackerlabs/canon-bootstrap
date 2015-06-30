@@ -1,6 +1,7 @@
 ---
 title: Tabs
 id: tabs
+index: 1
 collection: ui-components
 ---
 <div class="row">

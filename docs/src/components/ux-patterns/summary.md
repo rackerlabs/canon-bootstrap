@@ -1,6 +1,7 @@
 ---
 title: Summary
 id: summary
+index: 0
 collection: ux-patterns
 ---
 <h1 id="summary">Summary</h1>

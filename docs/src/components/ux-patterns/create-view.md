@@ -1,6 +1,7 @@
 ---
 title: Create View
 id: create-view
+index: 3
 collection: ux-patterns
 ---
 <h1 id="create-view">Create View</h1>

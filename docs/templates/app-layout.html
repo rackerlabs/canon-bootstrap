@@ -14,42 +14,11 @@
   <link rel="stylesheet" href="css/canon-bootstrap.css">
   <link rel="stylesheet" href="documentation.css">
 </head>
-<body data-spy="scroll" data-target="#sidebar">
-  <header class="navbar navbar-utility navbar-inverse">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">Canon Bootstrap</a>
-      </div>
-      <nav>
-        <ul class="nav navbar-nav">
-          <li><a href="/demo">Demo</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://github.com/rackerlabs/canon-bootstrap">GitHub</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body>
+  {{> header}}
+
   <section class="container">
-    <nav class="navbar navbar-primary">
-      <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#rs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <i class="fa fa-bars fa-2x"></i>
-          </button>
-          <a href="/" class="navbar-brand" style="background:url('../../assets/logo.png') center center no-repeat; min-width:164px;"></a>
-        </div>
-        <div collapse="isCollapsed" class="navbar-collapse collapse" id="rs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-left">
-            <li><a href="documentation/get-started.html">Get Started</a></li>
-            <li><a href="documentation/app-layout.html">App Layout</a></li>
-            <li><a href="documentation/ux-patterns.html">UX Patterns</a></li>
-            <li><a href="documentation/ui-components.html">UI Components</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    {{> primary-nav}}
 
     <nav class="navbar navbar-secondary navbar-collapse collapse" collapse="isCollapsed">
       <div class="container">

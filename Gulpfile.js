@@ -89,8 +89,24 @@ gulp.task('documentation', ['build'], function (done) {
       metalsmith(join(__dirname, 'docs'))
         .metadata({ baseUri: argv.baseUri })
         .use(markdown())
-        .use(collections())
-        .use(templates('handlebars'))
+        .use(collections({
+          'app-layout': {
+            sortBy: 'index'
+          },
+          'ui-components': {
+            sortBy: 'index'
+          },
+          'ux-patterns': {
+            sortBy: 'index'
+          }
+        }))
+        .use(templates({
+          engine: 'handlebars',
+          partials: {
+              'header': '../src/partials/header',
+              'primary-nav': '../src/partials/primary-nav'
+          }
+        }))
         .build(done);
     },
     canon: function (done) {

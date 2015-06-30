@@ -1,6 +1,7 @@
 ---
 title: Buttons
 id: buttons
+index: 0
 collection: ui-components
 ---
 <div class="row">

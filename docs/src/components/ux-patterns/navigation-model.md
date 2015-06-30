@@ -1,6 +1,7 @@
 ---
 title: Navigation Model
 id: navigation-model
+index: 1
 collection: ux-patterns
 ---
 <h1 id="navigation-model">Navigation Model</h1>

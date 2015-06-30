@@ -1,6 +1,7 @@
 ---
 title: List View
 id: list-view
+index: 2
 collection: ux-patterns
 ---
 <h1 id="list-view">List View</h1>
