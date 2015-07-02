@@ -103,8 +103,8 @@ gulp.task('documentation', ['build'], function (done) {
         .use(templates({
           engine: 'handlebars',
           partials: {
-              'header': '../src/partials/header',
-              'primary-nav': '../src/partials/primary-nav'
+              'header': '../src/documentation/partials/header',
+              'primary-nav': '../src/documentation/partials/primary-nav'
           }
         }))
         .build(done);
