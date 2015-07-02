@@ -39,6 +39,7 @@
     "gulp-webserver": "^0.8.4",
     "handlebars": "^2.0.0",
     "metalsmith": "^1.0.1",
+    "metalsmith-collections": "^0.7.0",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-templates": "^0.6.0",
     "mversion": "^1.10.0",
