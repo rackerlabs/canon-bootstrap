@@ -82,12 +82,14 @@ gulp.task('documentation', ['build'], function (done) {
   var metalsmith = require('metalsmith');
   var collections = require('metalsmith-collections');
   var markdown = require('metalsmith-markdown');
+  var metallic = require('metalsmith-metallic');
   var templates = require('metalsmith-templates');
 
   async.series({
     metalsmith: function (done) {
       metalsmith(join(__dirname, 'docs'))
         .metadata({ baseUri: argv.baseUri })
+        .use(metallic())
         .use(markdown())
         .use(collections({
           'app-layout': {
