@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="css/canon-bootstrap.css">
   <link rel="stylesheet" href="documentation.css">
+  <link rel="stylesheet" href="highlight.css">
 </head>
 <body>
   {{> header}}
@@ -37,6 +38,11 @@
     </div>
     
     {{#each ux-patterns}}
+      <div class="row" id="{{id}}">
+        <div class="col-md-12">
+          <h2>{{title}}</h2>
+        </div>
+      </div>
       {{{ contents }}}
     {{/each}}
 

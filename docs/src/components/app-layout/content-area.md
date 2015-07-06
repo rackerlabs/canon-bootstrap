@@ -1,8 +1,8 @@
 ---
-title: Buttons
-id: buttons
-index: 2
-collection: ui-components
+title: Content Area
+id: content-area
+index: 3
+collection: app-layout
 ---
 <div class="row">
   <div class="col-md-3">

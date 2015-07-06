@@ -1,6 +1,6 @@
 ---
-title: Tabs
-id: tabs
-index: 9
+title: Forms
+id: forms
+index: 8
 collection: ui-components
 ---

@@ -1,8 +1,8 @@
 ---
-title: Buttons
-id: buttons
-index: 2
-collection: ui-components
+title: Fluid Grid
+id: fluid-grid
+index: 1
+collection: app-layout
 ---
 <div class="row">
   <div class="col-md-3">

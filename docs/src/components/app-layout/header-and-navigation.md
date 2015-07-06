@@ -1,8 +1,8 @@
 ---
-title: Buttons
-id: buttons
+title: Header and Navigation
+id: header-and-navigation
 index: 2
-collection: ui-components
+collection: app-layout
 ---
 <div class="row">
   <div class="col-md-3">

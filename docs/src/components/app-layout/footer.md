@@ -1,8 +1,8 @@
 ---
-title: Buttons
-id: buttons
-index: 2
-collection: ui-components
+title: Footer
+id: footer
+index: 4
+collection: app-layout
 ---
 <div class="row">
   <div class="col-md-3">
