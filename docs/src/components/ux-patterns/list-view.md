@@ -4,25 +4,68 @@ id: list-view
 index: 2
 collection: ux-patterns
 ---
-<h1 id="list-view">List View</h1>
-
+<div class="row">
+  <div class="col-md-3">
+    <p>Though extremely useful as a navigational hub, the real power of list views is that you can use them to do these three things:</p>
+    <ol>
+      <li><strong>Quickly find items</strong>
+        <ul>
+          <li><a href="/documentation/ui-components.html#facets" class="highlight-source" data-highlight-target="facets-example">Facet</a></li>
+          <li><a href="/documentation/ui-components.html#forms" class="highlight-source" data-highlight-target="list-table-filter">Search</a></li>
+          <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="list-view-sort-example">Sort</a></li>
+        </ul>
+      </li>
+      <li><strong>Easily assess item health</strong>
+        <ul>
+          <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="row-status-{{page.items[1].id}}">Item Status</a></li>
+          <li><a href="/documentation/ui-components.html#monitoring-status-list" class="highlight-source" data-highlight-target="status-list-{{page.items[1].id}}">Monitor Health</a></li>
+        </ul>
+      </li>
+      <li><strong>Perform actions without drilling down</strong>
+        <ul>
+          <li><a href="/documentation/ui-components.html#action-dropdown" class="highlight-source" data-highlight-target="dropdown-{{page.items[1].id}}">Item Actions</a></li>
+          <li><a href="/documentation/ui-components.html#buttons" class="highlight-source" data-highlight-target="delete-items-button">Batch Actions</a></li>
+        </ul>
+      </li>
+    </ol>
+    <h3>Complex Components:</h3>
+    <ul>
+      <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="list-view-table">Table Component</a></li>
+      <li><a href="/documentation/ui-components.html#facets" class="highlight-source" data-highlight-target="facets-example">Facets Component</a></li>
+      <li><a href="/documentation/ui-components.html#monitoring-status-list" class="highlight-source" data-highlight-target="status-list-{{page.items[1].id}}">Monitoring Status List</a></li>
+    </ul>
+    <h3>Simple Components:</h3>
+    <ul>
+      <li><a href="/documentation/ui-components.html#typography" class="highlight-source" data-highlight-target="list-view-page-title">Page Title</a></li>
+      <li><a href="/documentation/ui-components.html#button-groups" class="highlight-source" data-highlight-target="list-view-button-group">Button Group</a></li>
+      <li><a href="/documentation/ui-components.html#tooltips" id="list-view-tooltip-link">Tooltips</a></li>
+      <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="row-status-{{page.items[1].id}}">Table Row Status</a></li>
+      <li><a href="/documentation/ui-components.html#table-row-selection" class="highlight-source" data-highlight-target="row-check-{{page.items[1].id}}">Table Row Selection</a></li>
+      <li><a href="/documentation/ui-components.html#action-cogs" class="highlight-source" data-highlight-target="row-cog-{{page.items[1].id}}">Action Cog</a></li>
+      <li>Dropdowns:
+        <ul>
+            <li><a href="/documentation/ui-components.html#action-dropdown" class="highlight-source" data-highlight-target="dropdown-{{page.items[1].id}}">Action Dropdown</a></li>
+        </ul>
+      </li>
+      <li>Popovers:
+        <ul>
+            <li><a href="/documentation/ui-components.html#popover" class="highlight-source" data-highlight-target="confirm-batch-delete-popover">Batch Action Popovers</a></li>
+            <li><a href="/documentation/ui-components.html#popover" class="highlight-source" data-highlight-target="rename-server-popover-list-view">Action Cog Popovers</a></li>
+            <li><a href="/documentation/ui-components.html#popover" class="highlight-source" data-highlight-target="create-check-popover-list-view">Inline Popovers</a></li>
+        </ul>
+      </li>
+    </ul>
+    <h4>Adherence Rating: 3</h4>
+  </div>
+  <div class="col-md-9">
+    <h3>Content</h3>
+  </div>
+</div>
 <div class="row">
   <div class="col-md-12">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel 
-       fermentum quam. Integer nec metus efficitur, facilisis metus et, 
-       volutpat neque. Nullam tristique erat ac metus cursus, nec  
-       imperdiet sem convallis. Duis interdum velit vel metus aliquet,  
-       nec vulputate mi aliquam. Cras lobortis tincidunt nisi a maximus.  
-       Aliquam aliquet in mi sed maximus. Vivamus et lectus vulputate odio  
-       tincidunt volutpat. Class aptent taciti sociosqu ad litora torquent  
-       per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit 
-       amet, consectetur adipiscing elit. Donec vel fermentum quam. Integer 
-       nec metus efficitur, facilisis metus et, volutpat neque. Nullam 
-       tristique erat ac metus cursus, nec imperdiet sem convallis. Duis 
-       interdum velit vel metus aliquet, nec vulputate mi aliquam. Cras 
-       lobortis tincidunt nisi a maximus. Aliquam aliquet in mi sed maximus. 
-       Vivamus et lectus vulputate odio tincidunt volutpat. Class aptent taciti
-       sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h4>Markup</h4>
+```html
+<div>Coming soon...</div>
+```
   </div>
 </div>

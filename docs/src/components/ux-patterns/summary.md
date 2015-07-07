@@ -4,25 +4,18 @@ id: summary
 index: 0
 collection: ux-patterns
 ---
-<h1 id="summary">Summary</h1>
-
 <div class="row">
   <div class="col-md-12">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel 
-       fermentum quam. Integer nec metus efficitur, facilisis metus et, 
-       volutpat neque. Nullam tristique erat ac metus cursus, nec  
-       imperdiet sem convallis. Duis interdum velit vel metus aliquet,  
-       nec vulputate mi aliquam. Cras lobortis tincidunt nisi a maximus.  
-       Aliquam aliquet in mi sed maximus. Vivamus et lectus vulputate odio  
-       tincidunt volutpat. Class aptent taciti sociosqu ad litora torquent  
-       per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit 
-       amet, consectetur adipiscing elit. Donec vel fermentum quam. Integer 
-       nec metus efficitur, facilisis metus et, volutpat neque. Nullam 
-       tristique erat ac metus cursus, nec imperdiet sem convallis. Duis 
-       interdum velit vel metus aliquet, nec vulputate mi aliquam. Cras 
-       lobortis tincidunt nisi a maximus. Aliquam aliquet in mi sed maximus. 
-       Vivamus et lectus vulputate odio tincidunt volutpat. Class aptent taciti
-       sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div>
+    	<p>UX Patterns consist of <a href="/documentation/ui-components.html">UI Components</a> that have been arranged and combined into templatized views. Our patterns and widgets have been tested and tweaked for optimal usability and to meet user needs. These patterns accelerate design and development processes by providing a framework for most interactions in an application. </p>
+        <h3>How do I use UX patterns?</h3>
+        <p class="max-width-large">Different roles benefit in different ways:</p>
+        <ul>
+          <li><strong>UX Designers</strong> use patterns to ensure consistency and accelerate decision making when designing application workflows.</li>
+          <li><strong>Interaction Designers</strong> can grab markup from patterns to facilitate rapid prototyping.</li>
+          <li><strong>Front-End Developers</strong> can reference components that make up each pattern and know exactly what is needed to build views.</li>
+          <li><strong>Back-End Developers</strong> can reference UX patterns to help inform the construction of back-end logic based on standard workflows.</li>
+        </ul>
+      </div>
   </div>
 </div>

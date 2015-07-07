@@ -4,25 +4,34 @@ id: navigation-model
 index: 1
 collection: ux-patterns
 ---
-<h1 id="navigation-model">Navigation Model</h1>
-
+<div class="row">
+  <div class="col-md-3">
+    <p>The hub and spoke nav model here describes a flat, simple application architecture. Our model uses three main page types:</p>
+    <ul>
+      <li><a href="/documentation/ux-patterns.html#list-view">List View</a></li>
+      <li><a href="/documentation/ux-patterns.html#detail-view">Detail View</a></li>
+      <li><a href="/documentation/ux-patterns.html#create-view">Create View</a></li>
+    </ul>
+    <p>Actions are kept in context on these pages by way of the <a href="/documentation/ui-components.html#popover">popover component</a>. Building your application to follow this model will help users keep a consistent mental picture of the application structure and ensure they accomplish their goals quickly and intuitively. </p>
+    <h3>How it works</h3>
+    <ul>
+      <li>Each large "hub" is related to a UX Pattern (details below on this page)</li>
+      <li>Each "spoke" coming off a hub represents a <a href="{{ site.baseurl }}/ui-components">UI Component</a> within the pattern</li>
+      <li>Use <a target="blank" href="/demo">List Views</a> as navigational hubs and for managing and assessing many items</li>
+      <li>Use the <a href="/documentation/ux-patterns.html#detail-view">Detail View</a> to present item details and show child items with their own set of actions and details</li>
+      <li>Use the <a href="/documentation/ux-patterns.html#create-view">Create View</a> when items have complex configuration settings or need a help section to guide users through the creation process</li>
+    </ul>
+    <h4>Adherence Rating: 2</h4>
+  </div>
+  <div class="col-md-9">
+    <img src="http://d6028ae8eb433bfc9fc7-a4c1bfca948fa9e57440a42732196fcf.r55.cf1.rackcdn.com/Screen%20Shot%202013-09-30%20at%204.49.55%20PM.png" height="611" width="874">
+  </div>
+</div>
 <div class="row">
   <div class="col-md-12">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel 
-       fermentum quam. Integer nec metus efficitur, facilisis metus et, 
-       volutpat neque. Nullam tristique erat ac metus cursus, nec  
-       imperdiet sem convallis. Duis interdum velit vel metus aliquet,  
-       nec vulputate mi aliquam. Cras lobortis tincidunt nisi a maximus.  
-       Aliquam aliquet in mi sed maximus. Vivamus et lectus vulputate odio  
-       tincidunt volutpat. Class aptent taciti sociosqu ad litora torquent  
-       per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit 
-       amet, consectetur adipiscing elit. Donec vel fermentum quam. Integer 
-       nec metus efficitur, facilisis metus et, volutpat neque. Nullam 
-       tristique erat ac metus cursus, nec imperdiet sem convallis. Duis 
-       interdum velit vel metus aliquet, nec vulputate mi aliquam. Cras 
-       lobortis tincidunt nisi a maximus. Aliquam aliquet in mi sed maximus. 
-       Vivamus et lectus vulputate odio tincidunt volutpat. Class aptent taciti
-       sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h4>Markup</h4>
+```html
+<div>Coming soon...</div>
+```
   </div>
 </div>
