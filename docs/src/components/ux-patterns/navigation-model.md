@@ -24,7 +24,7 @@ collection: ux-patterns
     <h4>Adherence Rating: 2</h4>
   </div>
   <div class="col-md-9">
-    <img src="http://d6028ae8eb433bfc9fc7-a4c1bfca948fa9e57440a42732196fcf.r55.cf1.rackcdn.com/Screen%20Shot%202013-09-30%20at%204.49.55%20PM.png" height="611" width="874">
+    <h3>Content</h3>
   </div>
 </div>
 <div class="row">
