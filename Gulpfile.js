@@ -83,7 +83,8 @@ gulp.task('documentation', ['build'], function (done) {
   var collections = require('metalsmith-collections');
   var markdown = require('metalsmith-markdown');
   var metallic = require('metalsmith-metallic');
-  var templates = require('metalsmith-templates');
+  var templates = require('metalsmith-in-place');
+  var layouts = require('metalsmith-layouts');
 
   async.series({
     metalsmith: function (done) {
@@ -103,7 +104,11 @@ gulp.task('documentation', ['build'], function (done) {
           }
         }))
         .use(templates({
+          engine: 'handlebars'
+        }))
+        .use(layouts({
           engine: 'handlebars',
+          directory: 'templates',
           partials: {
               'header': '../src/documentation/partials/header',
               'primary-nav': '../src/documentation/partials/primary-nav'

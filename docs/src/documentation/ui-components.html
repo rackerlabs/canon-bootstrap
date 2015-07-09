@@ -1,5 +1,29 @@
 ---
 title: UI Components
 description: Getting Started Guide
-template: ui-components.html
+layout: content.html
 ---
+<nav class="navbar navbar-secondary navbar-collapse collapse" collapse="isCollapsed">
+  <div class="container">
+    <ul class="nav navbar-nav navbar-left">
+      {{#each ui-components}}
+        <li><a href="documentation/ui-components.html#{{id}}">{{title}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1>{{title}}</h1>
+  </div>
+</div>
+
+{{#each ui-components}}
+  <div class="row" id="{{id}}">
+    <div class="col-md-12">
+      <h2>{{title}}</h2>
+    </div>
+  </div>
+  {{{ contents }}}
+{{/each}}

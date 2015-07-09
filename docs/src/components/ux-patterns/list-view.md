@@ -17,13 +17,13 @@ collection: ux-patterns
       </li>
       <li><strong>Easily assess item health</strong>
         <ul>
-          <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="row-status-{{page.items[1].id}}">Item Status</a></li>
-          <li><a href="/documentation/ui-components.html#monitoring-status-list" class="highlight-source" data-highlight-target="status-list-{{page.items[1].id}}">Monitor Health</a></li>
+          <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="">Item Status</a></li>
+          <li><a href="/documentation/ui-components.html#monitoring-status-list" class="highlight-source" data-highlight-target="">Monitor Health</a></li>
         </ul>
       </li>
       <li><strong>Perform actions without drilling down</strong>
         <ul>
-          <li><a href="/documentation/ui-components.html#action-dropdown" class="highlight-source" data-highlight-target="dropdown-{{page.items[1].id}}">Item Actions</a></li>
+          <li><a href="/documentation/ui-components.html#action-dropdown" class="highlight-source" data-highlight-target="">Item Actions</a></li>
           <li><a href="/documentation/ui-components.html#buttons" class="highlight-source" data-highlight-target="delete-items-button">Batch Actions</a></li>
         </ul>
       </li>
@@ -32,19 +32,19 @@ collection: ux-patterns
     <ul>
       <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="list-view-table">Table Component</a></li>
       <li><a href="/documentation/ui-components.html#facets" class="highlight-source" data-highlight-target="facets-example">Facets Component</a></li>
-      <li><a href="/documentation/ui-components.html#monitoring-status-list" class="highlight-source" data-highlight-target="status-list-{{page.items[1].id}}">Monitoring Status List</a></li>
+      <li><a href="/documentation/ui-components.html#monitoring-status-list" class="highlight-source" data-highlight-target="">Monitoring Status List</a></li>
     </ul>
     <h3>Simple Components:</h3>
     <ul>
       <li><a href="/documentation/ui-components.html#typography" class="highlight-source" data-highlight-target="list-view-page-title">Page Title</a></li>
       <li><a href="/documentation/ui-components.html#button-groups" class="highlight-source" data-highlight-target="list-view-button-group">Button Group</a></li>
       <li><a href="/documentation/ui-components.html#tooltips" id="list-view-tooltip-link">Tooltips</a></li>
-      <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="row-status-{{page.items[1].id}}">Table Row Status</a></li>
-      <li><a href="/documentation/ui-components.html#table-row-selection" class="highlight-source" data-highlight-target="row-check-{{page.items[1].id}}">Table Row Selection</a></li>
-      <li><a href="/documentation/ui-components.html#action-cogs" class="highlight-source" data-highlight-target="row-cog-{{page.items[1].id}}">Action Cog</a></li>
+      <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="">Table Row Status</a></li>
+      <li><a href="/documentation/ui-components.html#table-row-selection" class="highlight-source" data-highlight-target="">Table Row Selection</a></li>
+      <li><a href="/documentation/ui-components.html#action-cogs" class="highlight-source" data-highlight-target="">Action Cog</a></li>
       <li>Dropdowns:
         <ul>
-            <li><a href="/documentation/ui-components.html#action-dropdown" class="highlight-source" data-highlight-target="dropdown-{{page.items[1].id}}">Action Dropdown</a></li>
+            <li><a href="/documentation/ui-components.html#action-dropdown" class="highlight-source" data-highlight-target="">Action Dropdown</a></li>
         </ul>
       </li>
       <li>Popovers:
