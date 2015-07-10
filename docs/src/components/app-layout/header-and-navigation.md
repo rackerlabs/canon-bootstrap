@@ -3,41 +3,31 @@ title: Header and Navigation
 id: header-and-navigation
 index: 2
 collection: app-layout
+adherence: 3
 ---
 <div class="row">
   <div class="col-md-3">
-    <h3>Sidebar</h3>
-    <p>Some info about the content</p>
+    <h3>Types of Navigation</h3>
+    <b>Utility Navigation:</b>
     <ul>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Item 2</a></li>
-      <li><a href="#">Item 3</a></li>
+      <li>Top-right: Used for utilities like Account information, Support links, Logout, etc</li>
+      <li>Top-left: Used to SSO between Rackspace properties.</li>
+      <li>Remains consistent across the UIs that it links together</li>
+      <li>Highlight the current application with an active state so users know where they are.</li>
     </ul>
+    <b>Primary Navigation:</b>
+    <ul>
+      <li>Customize these sections for your application's categories or products.</li>
+      <li>Highlight the category with an active state so users know what section they are in.</li>
+      <li>Use <a href="/ui-components/#dropdowns">dropdowns</a> when you have 3 or more levels of information/navigation.</li>
+    </ul>
+    <b>Secondary Navigation:</b>
+    <ul>
+    	<li>Highlight the section with an active state so users know what sub-section they are in.</li>
+    </ul>
+    <h4>Adherence Rating: {{ adherence }}</h4>
   </div>
   <div class="col-md-9">
     <h4>Content</h4>
-      <span>Some info about the component</span>
-
-    <h4>Markup</h4>
-```html
-<div class="page-header">
-  <div class="btn-group pull-right">
-    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-      <i class="fa fa-gear"></i> Action <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" role="menu">
-      <li role="presentation" class="dropdown-header">Manage</li>
-      <li><a href="#">Action</a></li>
-      <li><a href="#">Another action</a></li>
-      <li><a href="#">Something else here</a></li>
-      <li role="presentation" class="dropdown-header">Monitor</li>
-      <li><a href="#">Something else here</a></li>
-      <li class="divider"></li>
-      <li><a href="#">Separated link</a></li>
-    </ul>
-  </div>
-  <h2>My Cloud Server <small>Cloud Server</small></h2>
-</div>
-```
   </div>
 </div>

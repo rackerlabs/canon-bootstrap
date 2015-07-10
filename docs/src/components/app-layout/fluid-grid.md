@@ -6,38 +6,22 @@ collection: app-layout
 ---
 <div class="row">
   <div class="col-md-3">
-    <h3>Sidebar</h3>
-    <p>Some info about the content</p>
+    <h3>How it works</h3>
+    <p>Canon predefines options for page layout via the <a href="#content-area">content area</a> styles but sometimes a grid system is needed for content within those sections or for custom layouts. As such, Canon includes a responsive 12 column fluid grid.</p>
     <ul>
-      <li><a href="#">Item 1</a></li>
-      <li><a href="#">Item 2</a></li>
-      <li><a href="#">Item 3</a></li>
+      <li>Create a grid row with the <code>rs-row</code> class</li>
+      <li>Add the appropriate number of <code>span-*</code> columns. As this is a 12-column grid, each <code>span-*</code> spans a number of those 12 columns, and should always add up to 12 for each row</li>
+      <li>The column gutters can be removed by using <code>rs-row-collapse</code> as the row class</li>
+      <li>Offsets can be applied with <code>offset-*</code></li>
+      <li>Nest grids by adding a new row and columns within a <code>span-*</code> column</li>
+    </ul>
+    <p><b>Responsive Options</b></p>
+    <ul>
+      <li>The default <code>span-*</code> columns stack vertically for viewports under 768px</li>
+      <li>To prevent vertical stacking use <code>small-span-*</code> column classes</li>
     </ul>
   </div>
   <div class="col-md-9">
     <h4>Content</h4>
-      <span>Some info about the component</span>
-
-    <h4>Markup</h4>
-```html
-<div class="page-header">
-  <div class="btn-group pull-right">
-    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-      <i class="fa fa-gear"></i> Action <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" role="menu">
-      <li role="presentation" class="dropdown-header">Manage</li>
-      <li><a href="#">Action</a></li>
-      <li><a href="#">Another action</a></li>
-      <li><a href="#">Something else here</a></li>
-      <li role="presentation" class="dropdown-header">Monitor</li>
-      <li><a href="#">Something else here</a></li>
-      <li class="divider"></li>
-      <li><a href="#">Separated link</a></li>
-    </ul>
-  </div>
-  <h2>My Cloud Server <small>Cloud Server</small></h2>
-</div>
-```
   </div>
 </div>
