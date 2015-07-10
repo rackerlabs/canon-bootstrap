@@ -90,6 +90,10 @@ gulp.task('documentation', ['build'], function (done) {
     metalsmith: function (done) {
       metalsmith(join(__dirname, 'docs'))
         .metadata({ baseUri: argv.baseUri })
+        .use(templates({
+          engine: 'handlebars',
+          pattern: 'components/**/*.md'
+        }))
         .use(metallic())
         .use(markdown())
         .use(collections({
@@ -104,7 +108,8 @@ gulp.task('documentation', ['build'], function (done) {
           }
         }))
         .use(templates({
-          engine: 'handlebars'
+          engine: 'handlebars',
+          pattern: 'documentation/**/*.html'
         }))
         .use(layouts({
           engine: 'handlebars',
