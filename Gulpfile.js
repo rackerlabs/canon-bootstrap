@@ -108,8 +108,7 @@ gulp.task('documentation', ['build'], function (done) {
           }
         }))
         .use(templates({
-          engine: 'handlebars',
-          pattern: 'documentation/**/*.html'
+          engine: 'handlebars'
         }))
         .use(layouts({
           engine: 'handlebars',
