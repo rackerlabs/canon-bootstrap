@@ -59,13 +59,13 @@ collection: ux-patterns
   </div>
   <div class="col-md-9">
     <h3>Content</h3>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12">
-    <h4>Markup</h4>
-```html
-<div>Coming soon...</div>
-```
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Markup</h4>
+    ```html
+    <div>Coming soon...</div>
+    ```
+      </div>
+    </div>
   </div>
 </div>
