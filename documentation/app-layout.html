@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Canon Bootstrap - Get Started</title>
+  <title>App Layout</title>
 
   <meta name="description" content="Getting Started Guide">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +13,9 @@
 
   <link rel="stylesheet" href="css/canon-bootstrap.css">
   <link rel="stylesheet" href="documentation.css">
+  <link rel="stylesheet" href="highlight.css">
 </head>
-<body data-spy="scroll" data-target="#sidebar">
+<body>
   <header class="navbar navbar-utility navbar-inverse">
     <div class="container">
       <div class="navbar-header">
@@ -50,26 +51,140 @@
         </div>
       </div>
     </nav>
-
-    
-<nav class="navbar navbar-secondary navbar-collapse collapse" collapse="isCollapsed">
+    <nav class="navbar navbar-secondary navbar-collapse collapse" collapse="isCollapsed">
   <div class="container">
     <ul class="nav navbar-nav navbar-left">
-      <li><a href="#">Summary</a></li>
-      <li><a href="#">Fluid Grid</a></li>
-      <li><a href="#">Header &amp; Navigation</a></li>
-      <li><a href="#">Content Area</a></li>
-      <li><a href="#">Footer</a></li>
+        <li><a href="documentation/app-layout.html#summary">Summary</a></li>
+        <li><a href="documentation/app-layout.html#fluid-grid">Fluid Grid</a></li>
+        <li><a href="documentation/app-layout.html#header-and-navigation">Header and Navigation</a></li>
+        <li><a href="documentation/app-layout.html#content-area">Content Area</a></li>
+        <li><a href="documentation/app-layout.html#footer">Footer</a></li>
     </ul>
   </div>
 </nav>
 
-<div class="row">
-  <div class="col-md-12">
-    <h1>App Layout</h1>
-    <p>Coming Soon</p>
+  <div class="row" id="summary">
+    <div class="col-md-12">
+      <h1>Summary</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <h3>Layout Framework</h3>
+    <p>The basic layout of Canon consists of 5 parts: 3 layers of navigation within the <a href="#header-&-navigation">header</a>, the <a href="#content-area">content area</a>, and the <a href="#footer">footer</a>.</p>
+    <ol>
+      <li>The <a href="#header-&-navigation">utility navigation</a> consists of links and tools that help the user, such as account details, log out, or help information, but are not the core sections of the application.</li>
+      <li>The <a href="#header-&-navigation">primary navigation</a> is used for the main sections of the application or for <a href="/ui-components/#dropdowns">dropdown</a> categories that organize sections into higher level groups.</li>
+      <li>The <a href="#header-&-navigation">secondary navigation</a> is used for a 2nd or 3rd level of navigation, depending on the structure of the primary nav.</li>
+      <li>The <a href="#content-area">content area</a> is used for your application&#39;s main data and interactions.</li>
+      <li>The <a href="#footer">footer</a> is used for legal information, application news, and feedback links.</li>
+    </ol>
+  </div>
+  <div class="col-md-9">
+    <h4>Content</h4>
   </div>
 </div>
+  <div class="row" id="fluid-grid">
+    <div class="col-md-12">
+      <h1>Fluid Grid</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <h3>How it works</h3>
+    <p>Canon predefines options for page layout via the <a href="#content-area">content area</a> styles but sometimes a grid system is needed for content within those sections or for custom layouts. As such, Canon includes a responsive 12 column fluid grid.</p>
+    <ul>
+      <li>Create a grid row with the <code>rs-row</code> class</li>
+      <li>Add the appropriate number of <code>span-<em></code> columns. As this is a 12-column grid, each <code>span-</em></code> spans a number of those 12 columns, and should always add up to 12 for each row</li>
+      <li>The column gutters can be removed by using <code>rs-row-collapse</code> as the row class</li>
+      <li>Offsets can be applied with <code>offset-<em></code></li>
+      <li>Nest grids by adding a new row and columns within a <code>span-</em></code> column</li>
+    </ul>
+    <p><b>Responsive Options</b></p>
+    <ul>
+      <li>The default <code>span-<em></code> columns stack vertically for viewports under 768px</li>
+      <li>To prevent vertical stacking use <code>small-span-</em></code> column classes</li>
+    </ul>
+  </div>
+  <div class="col-md-9">
+    <h4>Content</h4>
+  </div>
+</div>
+  <div class="row" id="header-and-navigation">
+    <div class="col-md-12">
+      <h1>Header and Navigation</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <h3>Types of Navigation</h3>
+    <b>Utility Navigation:</b>
+    <ul>
+      <li>Top-right: Used for utilities like Account information, Support links, Logout, etc</li>
+      <li>Top-left: Used to SSO between Rackspace properties.</li>
+      <li>Remains consistent across the UIs that it links together</li>
+      <li>Highlight the current application with an active state so users know where they are.</li>
+    </ul>
+    <b>Primary Navigation:</b>
+    <ul>
+      <li>Customize these sections for your application&#39;s categories or products.</li>
+      <li>Highlight the category with an active state so users know what section they are in.</li>
+      <li>Use <a href="/ui-components/#dropdowns">dropdowns</a> when you have 3 or more levels of information/navigation.</li>
+    </ul>
+    <b>Secondary Navigation:</b>
+    <ul>
+        <li>Highlight the section with an active state so users know what sub-section they are in.</li>
+    </ul>
+    <h4>Adherence Rating: 3</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Content</h4>
+  </div>
+</div>
+  <div class="row" id="content-area">
+    <div class="col-md-12">
+      <h1>Content Area</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+        <h3>Layout Options</h3>
+        <p>The content area contains the primary information and functionality views for your application. Consistent layout is imperative so users always have a feel for where they are. For example, a List Table should use a different layout than a Detail View.</p>
+        <h3>Sidebars</h3>
+    <p>The position of the sidebars significantly changes based on the content.</p>
+        <ul>
+      <li><strong>Left Sidebar (Filtering):</strong><br /> Use for functionality that correlates with the main content (filtering). Do not use for navigation or informational text.</li>
+      <li><b>Right Sidebar (Help Panel):</b><br /> Use for information that correlates with the main content (help information, support links, etc). Do not use for navigation or filtering.</li>
+        </ul>
+        <h4>Adherence Rating: 2</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Content</h4>
+  </div>
+</div>
+  <div class="row" id="footer">
+    <div class="col-md-12">
+      <h1>Footer</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+        <h3>How it works</h3>
+        <p>The footer looks and behaves similar to the top navigation bar. Just like the top nav, the footer should be consistent across Rackspace applications. If you support multiple geographies, these may change between countries. Below is a list of what it should contain in the order they appear:</p>
+        <ul>
+            <li><b>Copyright Date</b></li>
+            <li><b>Terms of Service</b> </li>
+            <li><b>Privacy Policy</b></li>
+            <li><b>Application News:</b><br /> For example: Release notes, new features, or other information that keeps users up to date with your app.</li>
+            <li><b>Feedback:</b><br /> Provide a way for users to submit feedback. This helps your team prioritize features and make users feel involved.</li>
+        </ul>
+        <h4>Adherence Rating: 3</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Content</h4>
+  </div>
+</div>
+
 
   </section>
 

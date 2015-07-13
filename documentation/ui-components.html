@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Canon Bootstrap - Get Started</title>
+  <title>UI Components</title>
 
   <meta name="description" content="Getting Started Guide">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +13,9 @@
 
   <link rel="stylesheet" href="css/canon-bootstrap.css">
   <link rel="stylesheet" href="documentation.css">
+  <link rel="stylesheet" href="highlight.css">
 </head>
-<body data-spy="scroll" data-target="#sidebar">
+<body>
   <header class="navbar navbar-utility navbar-inverse">
     <div class="container">
       <div class="navbar-header">
@@ -50,33 +51,365 @@
         </div>
       </div>
     </nav>
-
     <nav class="navbar navbar-secondary navbar-collapse collapse" collapse="isCollapsed">
   <div class="container">
     <ul class="nav navbar-nav navbar-left">
-      <li><a href="#">Summary</a></li>
-      <li><a href="#">Typography</a></li>
-      <li><a href="#">Buttons</a></li>
-      <li><a href="#">Popover</a></li>
-      <li><a href="#">Dropdowns</a></li>
-      <li><a href="#">Tables</a></li>
-      <li><a href="#">Facets</a></li>
-      <li><a href="#">Details</a></li>
-      <li><a href="#">Forms</a></li>
-      <li><a href="#">Tabs</a></li>
-      <li><a href="#">Status Indicators</a></li>
-      <li><a href="#">Progress Bars</a></li>
-      <li><a href="#">Tooltips</a></li>
+        <li><a href="documentation/ui-components.html#summary">Summary</a></li>
+        <li><a href="documentation/ui-components.html#typography">Typography</a></li>
+        <li><a href="documentation/ui-components.html#buttons">Buttons</a></li>
+        <li><a href="documentation/ui-components.html#popover">Popover</a></li>
+        <li><a href="documentation/ui-components.html#dropdowns">Dropdowns</a></li>
+        <li><a href="documentation/ui-components.html#tables">Tables</a></li>
+        <li><a href="documentation/ui-components.html#facets">Facets</a></li>
+        <li><a href="documentation/ui-components.html#details">Details</a></li>
+        <li><a href="documentation/ui-components.html#forms">Forms</a></li>
+        <li><a href="documentation/ui-components.html#tabs">Tabs</a></li>
+        <li><a href="documentation/ui-components.html#status-indicators">Status Indicators</a></li>
+        <li><a href="documentation/ui-components.html#progress-bars">Progress Bars</a></li>
+        <li><a href="documentation/ui-components.html#tooltips">Tooltips</a></li>
     </ul>
   </div>
 </nav>
 
-<div class="row">
-  <div class="col-md-12">
-    <h1>UI Components</h1>
-    <p>Coming Soon</p>
+  <div class="row" id="summary">
+    <div class="col-md-12">
+      <h1>Summary</h1>
+    </div>
+  </div>
+  <p>UI components are reusable elements that combine to form UX Patterns. If you are using these for the first time, please read through the component details carefully. The “Adherence Rating” of each pattern explains how strict implementation must be to ensure usability. If you need new components/patterns for your app or if would like to participate in creating additional ones, please let us know.</p>
+<p>Adherence Rating Scale:</p>
+<ol>
+  <li><strong>Just a suggestion</strong> - Use it if you like it! Your implementation can vary. You may choose to use a similar pattern of your own.</li>
+  <li><strong>A really good idea</strong> - Some really good thought was put into this. Try and follow the guidelines.</li>
+  <li><strong>Sort of strict</strong> - Significant design and research went into the production of this pattern. Implementation should follow guidelines pretty closely overall.</li>
+  <li><strong>Basically the law</strong> - A lot of research and design went into this pattern. It has been widely accepted as the standard at Rackspace. Implementation must be exactly as prescribed in this article.</li>
+</ol>
+  <div class="row" id="typography">
+    <div class="col-md-12">
+      <h1>Typography</h1>
+    </div>
+  </div>
+  <div class="row">
+ <div class="col-md-3">
+       <h3>Headings</h3>
+       <p>Use these styles to visually distinguish sections of content.</p>
+       <h3>When to use</h3>
+       <ul>
+           <li>Page titles should use &lt;h2 class=&quot;rs-page-title&quot;&gt;</li>
+           <li><a href="#details">Section</a> headings should use &lt;h1&gt;, sub-sections should use &lt;h3&gt;.</li>
+           <li>Sidebar headings should use &lt;h3&gt;, sidebar sub-headings should use &lt;h4&gt;</li>
+       </ul>
+       <h4>Adherence Rating: 2</h4>
+ </div>
+ <div class="col-md-9">
+   <h4>Markup</h4>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+ </div>
+</div>
+  <div class="row" id="buttons">
+    <div class="col-md-12">
+      <h1>Buttons</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <h3>How it works</h3>
+    <p>Use these styles to visually distinguish between actions, making it clear to users which action they are performing.</p>
+    <ul>
+      <li><a href="#primary-buttons">Primary Buttons</a></li>
+      <li><a href="#secondary-buttons">Secondary Buttons</a></li>
+      <li><a href="#action-buttons">Action Buttons</a></li>
+      <li><a href="#login-buttons">Login Buttons</a></li>
+      <li><a href="#cancel-links">Cancel Links</a></li>
+      <li><a href="#action-cogs">Action Cogs</a></li>
+      <li><a href="#delete-buttons">Delete Buttons</a></li>
+      <li><a href="#edit-button">Edit Buttons</a></li>
+      <li><a href="#plus-button">Plus Buttons</a></li>
+    </ul>
+    <h3>Guidelines for use</h3>
+    <ul>
+      <li><a href="#button-groups">Button groups</a> should be used to submit forms and should contain a cancel link.</li>
+      <li>Never shown/hide buttons dynamically. Instead, disable/enable buttons using the &quot;disabled&quot; attribute on the button.</li>
+      <li>Learn more about button best practices from our <a href="#button-research">design research</a>.</li>
+    </ul>
+    <h4>Adherence Rating: 2</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Markup</h4>
+ <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
   </div>
 </div>
+  <div class="row" id="popover">
+    <div class="col-md-12">
+      <h1>Popover</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <p>Use the popover in conjunction with <a href="#details">Details</a> and <a href="#edit-button">Edit Button</a> to edit data or with the <a href="#primary-buttons">Primary Button</a> to add or create data.</p>
+    <ul>
+      <li>The notch of the popover always points to the title (key, link, or button) of the element you are editing or viewing.</li>
+      <li>The popover should cover any information that you are editing.</li>
+      <li>Popover buttons have reserved space at the bottom. Save button labels should indicate what action you are performing and  always relate to the subject of the popover.</li>
+      <li>Clicking outside the popover should close it. Interaction with elements under the popover is restricted until closed.</li>
+      <li>Don&#39;t force-fit multi-step processes into popovers.  That sort of interaction should be acheived using full-page views.</li>
+      <li>Try to avoid spawning popovers from popovers.  Keeping the interaction as flat as possible is the key to clean design.</li>
+      <li>Avoid spawning popovers on hover.  They should not behave like tooltips.</li>
+      <li>Specify form sizes to match the width of the longest label: xsmall, small, medium, large, xlarge, xxlarge.</li>
+    </ul>
+    <h5>Required Components</h5>
+    <ul>
+      <li><a href="#primary-buttons">Primary Button</a></li>
+      <li><a href="#cancel-link">Cancel Link</a></li>
+    </ul>
+    <h4>Adherence Rating: 3</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Markup</h4>
+ <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+  </div>
+</div>
+
+  <div class="row" id="dropdowns">
+    <div class="col-md-12">
+      <h1>Dropdowns</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <h3>When to use</h3>
+    <p>Dropdown menus are used when displaying several related links will not fit the alotted space. There are 3 styles of dropdowns, each with a different purpose. Use the links below to learn more about the usage guidelines for each one:</p>
+    <ul>
+      <li><a href="#primary-dropdown">Primary Dropdown</a></li>
+      <li><a href="#utility-dropdown">Utility Dropdown</a></li>
+      <li><a href="#action-dropdown">Action Dropdown</a></li>
+    </ul>
+    <h4>Adherence Rating: 3</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Markup</h4>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+  </div>
+</div>
+  <div class="row" id="tables">
+    <div class="col-md-12">
+      <h1>Tables</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <h3>When to use</h3>
+    <p>Tabs are used to navigate lists of related content. In forms, they are used to categorize and organize similar content. The count for each list is not required, but feel free to use where appropriate.</p>
+    <ul>
+      <li>Use when the content for each tab has similar structure (e.g., list tables).</li>
+      <li>Use when there is not enough space on the page to show all content.</li>
+      <li>Use when the content of each tab can be viewed separately from each other, and doesn&#39;t require comparison.</li>
+      <li>Do not use when the content inside each pane would function just as well in its own separate page.</li>
+      <li>Limit to 5-8 sections, depending on the length of each section name.</li>
+    </ul>
+    <h4>Adherence Rating: 2</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Markup</h4>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+  </div>
+</div>
+  <div class="row" id="facets">
+    <div class="col-md-12">
+      <h1>Facets</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <h3>How it works</h3>
+    <p>Facets can be used to apply filters to a <a href="#list-view-table">Table</a>. This is not a standalone component - it should be used as part of the <a href="/ux-patterns/#list-view">List View Pattern</a>.</p>
+    <h4>Rules for Use</h4>
+    <ul>
+      <li>The top header should reflect the name of the product - EX: &quot;Filter Servers&quot;<div>If the product name is long and gets truncated, use &quot;Filter List&quot; instead.</div></li>
+      <li>Organize sections based on usefulness - For example: we place priority on tags</li>
+      <li>Sections must contain at least two items to appear in the facet sidebar</li>
+      <li>Facets can contain icons related to items in the table - see the Status example</li>
+      <li>Only one facet section should have icons per page to reduce cognitive load</li>
+      <li>Facet counts are optional and although useful, they can result in extra processing to calculate - <i>beware of performance issues</i></li>
+    </ul>
+    <h4>Toggling Facet Sections</h4>
+    <ul>
+      <li>Limit facet sections to 5 visible facet items</li>
+      <li>Add the &quot;more&quot; / &quot;less&quot; link when a section has 6 or more facet items</li>
+      <li>Use &quot;expanded&quot; and &quot;collapsed&quot; classes on the rs-facet-section element to easily track toggled states</li>
+    </ul>
+    <h4>About Filtering</h4>
+    <p>Table filtering should usually reduce result sets rather than increase them. A good analogy is that of choosing to query a system using &quot;OR&quot; versus &quot;AND&quot; operators.</p>
+    <p>How you choose to filter will depend on the nature of your data, and what your users are trying to achieve by filtering.</p>
+    <p>When filtering using &quot;OR&quot; logic, do not hide excluded facets - just add the &quot;disabled&quot; class to show that they are not within the result set.</p>
+    <h4>Adherence Rating: 3</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Markup</h4>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+  </div>
+</div>
+  <div class="row" id="details">
+    <div class="col-md-12">
+      <h1>Details</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <h3>When to use</h3>
+    <p>Use this to display details about a single item or product. Combine this component with the <a href="#action-buttons">action button</a>, <a href="#action-dropdown">action dropdown</a>, <a href="#status-indicators">status indicator, <a href="#embedded-table">embedded tables</a>, and <a href="#popover">popovers</a>. For more information on how to combine components, use the <a href="/ux-patterns/#detail-view">Detail View Pattern</a>. </p>
+    <p>The content of a details component is broken into 2 main parts: The <strong>details header</strong> summarizes the item you are viewing. The <strong>details sections</strong> are sub-sections that display status, technical specifications, settings, or tables of data about the product. These are often combined with editable actions that spawn popovers.</p>
+    <h5>Details Header</h5>
+    <ul>
+      <li>Grey text shows the category of the product.</li>
+      <li>Primary text shows the name of the product.</li>
+      <li>Include tags (if applicable).</li>
+    </ul>
+    <h5>Details Sections</h5>
+    <ul>
+      <li>The section header should identify the type of content within the sub-section.</li>
+      <li>This pattern is built to be used with content like key / value lists, <a href="#embedded-table">embedded tables</a>, etc.</li>
+      <li>The entity&#39;s <a href="#status-indicators">status</a> should always be the first item in the key / value list.</li>
+      <li>When key / value items are editable, use <a href="#edit-button">edit buttons</a> to open a popover, modal or new page to update.</li>
+    </ul>
+    <h4>Adherence Rating: 1</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Markup</h4>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+  </div>
+</div>
+  <div class="row" id="forms">
+    <div class="col-md-12">
+      <h1>Forms</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <h3>How it works</h3>
+    <p>Forms consist of two or more elements in key/value (or label/input) format.</p>
+    <ul>
+      <li>Each key should be specific, short and easy to read.</li>
+      <li>When creating, name fields come first.</li>
+      <li>Specify the input size to match the width of the data: xsmall, small, medium, large, xlarge, xxlarge.</li>
+      <li>Specify form sizes to match the width of the longest label: xsmall, small, medium, large, xlarge, xxlarge. (Applies to all but Create Form)</li>
+    </ul>
+    <h4>Adherence Rating: 2</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Markup</h4>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+  </div>
+</div>
+  <div class="row" id="tabs">
+    <div class="col-md-12">
+      <h1>Tabs</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+        <h3>When to use</h3>
+    <p>Tabs are used to navigate lists of related content. In forms, they are used to categorize and organize similar content. The count for each list is not required, but feel free to use where appropriate.</p>
+    <ul>
+      <li>Use when the content for each tab has similar structure (e.g., list tables).</li>
+      <li>Use when there is not enough space on the page to show all content.</li>
+      <li>Use when the content of each tab can be viewed separately from each other, and doesn&#39;t require comparison.</li>
+      <li>Do not use when the content inside each pane would function just as well in its own separate page.</li>
+      <li>Limit to 5-8 sections, depending on the length of each section name.</li>
+    </ul>
+        <h4>Adherence Rating: 2</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Markup</h4>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+  </div>
+</div>
+  <div class="row" id="status-indicators">
+    <div class="col-md-12">
+      <h1>Status Indicators</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+        <h3>How it works</h3>
+        <p>Use status indicators for any entity with states that may impact the customer&#39;s experience.</p>
+        <ul>
+            <li>Indicators use a solid color to represent status, such as &quot;error, warning, active, or disabled&quot;.</li>
+            <li>Use .rs-status for the pill-style component. It is most often the first item on an entity&#39;s <a href="#details">details</a> page.</li>
+      <li>The <a href="#colored-text">colored text</a> style (without .rs-status) is often used in a table to explain a process.</li>
+            <li>Improve the API status formatting as necessary (e.g., change API strings from ALL CAPS to Title Case).</li>
+            <li>Status specifications for Cloud Products can be found below. Use these as an example for mapping other Rackspace API statuses to the UI.</li>
+            <ul>
+                <li><a href="https://one.rackspace.com/display/reach/Cloud+Servers+Status+Specification">Servers</a></li>
+                <li><a href="https://one.rackspace.com/display/reach/Cloud+Database+Status+Specification">Databases</a></li>
+                <li><a href="https://one.rackspace.com/display/reach/Block+Storage+Status+Specification">Block Storage</a></li>
+                <li><a href="https://one.rackspace.com/display/reach/Deployments+Status+Specification">Deployments</a></li>
+                <li><a href="https://one.rackspace.com/display/reach/Images+Status+Specification">Images</a></li>
+            </ul>
+        </ul>
+        <h4>Adherence Rating: 1</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Markup</h4>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+  </div>
+</div>
+  <div class="row" id="progress-bars">
+    <div class="col-md-12">
+      <h1>Progress Bars</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <p>Progress bars visually communicate activity, status and percentage.</p>
+
+    <h3>When to use</h3>
+    <ul>
+      <li><a href="#progress-bars">Basic Progress Bars</a> can be used when a metric can be expressed in terms of amount consumed versus total amount</li>
+      <li><a href="#multi-step-process">Multi-Step Progress Bars</a> are good for representing a user&#39;s position in a multi-step process as well as the activity and status of each step. </li>
+    </ul>
+    <h3>How it works</h3>
+    <ul>
+      <li>Use <a href="#status-indicators">status colors</a> to reflect the parent entity&#39;s status. This can change throughout the process.</li>
+      <ul>
+        <li><span style="color:#00a96d; font-weight:bold">Green (OK)</span> state is for processes with no impact on the uptime of a product, like uploading a file.</li>
+        <li><span style="color:#ff9d00; font-weight:bold">Yellow (Processing)</span> state shows a user initiated processes, like rebuilding or resizing, that may cause a product to intermittently work.</li>
+        <li><span style="color:#c40022; font-weight:bold">Red (Error)</span> state is used to represent a failed process, or to indicate that a device is currently offline.</li>
+        <li><span style="color:#1e6ec1; font-weight:bold">Blue (Neutral Info)</span> is for displaying metrics with a neutral status, like showing percent of total.</li>
+      </ul>
+      <li>Use animating stripes when you need more indication that work is happening in the background.</li>
+    </ul>
+    <h4>Adherence Rating: 1</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Markup</h4>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+  </div>
+</div>
+  <div class="row" id="tooltips">
+    <div class="col-md-12">
+      <h1>Tooltips</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+        <h3>How it works</h3>
+        <p>Use the tooltip when you want to convey brief snippets of information, to explain an element a bit more, or to display truncated text.</p>
+        <ul>
+            <li>Activates when hovered on with mouse. </li>
+            <li>The tooltip disappears when mouse hovers away, or when clicked in the icon. Tooltip does not reactivate on click.</li>
+            <li>Tooltip should only be used on icon images, text, and table rows; use when see fit.</li>
+            <li>Max width for the tooltip is 500px.</li>
+        </ul>
+        <h4>Adherence Rating: 1</h4>
+  </div>
+  <div class="col-md-9">
+    <h4>Markup</h4>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+  </div>
+</div>
+
+
   </section>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

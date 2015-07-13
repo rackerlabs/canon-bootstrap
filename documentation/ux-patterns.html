@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Canon Bootstrap - Get Started</title>
+  <title>UX Patterns</title>
 
   <meta name="description" content="Getting Started Guide">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +13,9 @@
 
   <link rel="stylesheet" href="css/canon-bootstrap.css">
   <link rel="stylesheet" href="documentation.css">
+  <link rel="stylesheet" href="highlight.css">
 </head>
-<body data-spy="scroll" data-target="#sidebar">
+<body>
   <header class="navbar navbar-utility navbar-inverse">
     <div class="container">
       <div class="navbar-header">
@@ -50,25 +51,247 @@
         </div>
       </div>
     </nav>
-
     <nav class="navbar navbar-secondary navbar-collapse collapse" collapse="isCollapsed">
   <div class="container">
     <ul class="nav navbar-nav navbar-left">
-      <li><a href="#">Summary</a></li>
-      <li><a href="#">Navigation Model</a></li>
-      <li><a href="#">List View</a></li>
-      <li><a href="#">Create View</a></li>
-      <li><a href="#">Detail View</a></li>
+        <li><a href="documentation/ux-patterns.html#summary">Summary</a></li>
+        <li><a href="documentation/ux-patterns.html#navigation-model">Navigation Model</a></li>
+        <li><a href="documentation/ux-patterns.html#list-view">List View</a></li>
+        <li><a href="documentation/ux-patterns.html#create-view">Create View</a></li>
+        <li><a href="documentation/ux-patterns.html#detail-view">Detail View</a></li>
     </ul>
   </div>
 </nav>
 
-<div class="row">
+  <div class="row" id="summary">
+    <div class="col-md-12">
+      <h1>Summary</h1>
+    </div>
+  </div>
+  <div class="row">
   <div class="col-md-12">
-    <h1>UX Patterns</h1>
-    <p>Coming Soon</p>
+    <div>
+        <p>UX Patterns consist of <a href="/documentation/ui-components.html">UI Components</a> that have been arranged and combined into templatized views. Our patterns and widgets have been tested and tweaked for optimal usability and to meet user needs. These patterns accelerate design and development processes by providing a framework for most interactions in an application. </p>
+        <h3>How do I use UX patterns?</h3>
+        <p class="max-width-large">Different roles benefit in different ways:</p>
+        <ul>
+          <li><strong>UX Designers</strong> use patterns to ensure consistency and accelerate decision making when designing application workflows.</li>
+          <li><strong>Interaction Designers</strong> can grab markup from patterns to facilitate rapid prototyping.</li>
+          <li><strong>Front-End Developers</strong> can reference components that make up each pattern and know exactly what is needed to build views.</li>
+          <li><strong>Back-End Developers</strong> can reference UX patterns to help inform the construction of back-end logic based on standard workflows.</li>
+        </ul>
+      </div>
   </div>
 </div>
+  <div class="row" id="navigation-model">
+    <div class="col-md-12">
+      <h1>Navigation Model</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <p>The hub and spoke nav model here describes a flat, simple application architecture. Our model uses three main page types:</p>
+    <ul>
+      <li><a href="/documentation/ux-patterns.html#list-view">List View</a></li>
+      <li><a href="/documentation/ux-patterns.html#detail-view">Detail View</a></li>
+      <li><a href="/documentation/ux-patterns.html#create-view">Create View</a></li>
+    </ul>
+    <p>Actions are kept in context on these pages by way of the <a href="/documentation/ui-components.html#popover">popover component</a>. Building your application to follow this model will help users keep a consistent mental picture of the application structure and ensure they accomplish their goals quickly and intuitively. </p>
+    <h3>How it works</h3>
+    <ul>
+      <li>Each large &quot;hub&quot; is related to a UX Pattern (details below on this page)</li>
+      <li>Each &quot;spoke&quot; coming off a hub represents a <a href="/ui-components">UI Component</a> within the pattern</li>
+      <li>Use <a target="blank" href="/demo">List Views</a> as navigational hubs and for managing and assessing many items</li>
+      <li>Use the <a href="/documentation/ux-patterns.html#detail-view">Detail View</a> to present item details and show child items with their own set of actions and details</li>
+      <li>Use the <a href="/documentation/ux-patterns.html#create-view">Create View</a> when items have complex configuration settings or need a help section to guide users through the creation process</li>
+    </ul>
+    <h4>Adherence Rating: 2</h4>
+  </div>
+  <div class="col-md-9">
+    <h3>Content</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Markup</h4>
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="row" id="list-view">
+    <div class="col-md-12">
+      <h1>List View</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <p>Though extremely useful as a navigational hub, the real power of list views is that you can use them to do these three things:</p>
+    <ol>
+      <li><strong>Quickly find items</strong>
+        <ul>
+          <li><a href="/documentation/ui-components.html#facets" class="highlight-source" data-highlight-target="facets-example">Facet</a></li>
+          <li><a href="/documentation/ui-components.html#forms" class="highlight-source" data-highlight-target="list-table-filter">Search</a></li>
+          <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="list-view-sort-example">Sort</a></li>
+        </ul>
+      </li>
+      <li><strong>Easily assess item health</strong>
+        <ul>
+          <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="">Item Status</a></li>
+          <li><a href="/documentation/ui-components.html#monitoring-status-list" class="highlight-source" data-highlight-target="">Monitor Health</a></li>
+        </ul>
+      </li>
+      <li><strong>Perform actions without drilling down</strong>
+        <ul>
+          <li><a href="/documentation/ui-components.html#action-dropdown" class="highlight-source" data-highlight-target="">Item Actions</a></li>
+          <li><a href="/documentation/ui-components.html#buttons" class="highlight-source" data-highlight-target="delete-items-button">Batch Actions</a></li>
+        </ul>
+      </li>
+    </ol>
+    <h3>Complex Components:</h3>
+    <ul>
+      <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="list-view-table">Table Component</a></li>
+      <li><a href="/documentation/ui-components.html#facets" class="highlight-source" data-highlight-target="facets-example">Facets Component</a></li>
+      <li><a href="/documentation/ui-components.html#monitoring-status-list" class="highlight-source" data-highlight-target="">Monitoring Status List</a></li>
+    </ul>
+    <h3>Simple Components:</h3>
+    <ul>
+      <li><a href="/documentation/ui-components.html#typography" class="highlight-source" data-highlight-target="list-view-page-title">Page Title</a></li>
+      <li><a href="/documentation/ui-components.html#button-groups" class="highlight-source" data-highlight-target="list-view-button-group">Button Group</a></li>
+      <li><a href="/documentation/ui-components.html#tooltips" id="list-view-tooltip-link">Tooltips</a></li>
+      <li><a href="/documentation/ui-components.html#tables" class="highlight-source" data-highlight-target="">Table Row Status</a></li>
+      <li><a href="/documentation/ui-components.html#table-row-selection" class="highlight-source" data-highlight-target="">Table Row Selection</a></li>
+      <li><a href="/documentation/ui-components.html#action-cogs" class="highlight-source" data-highlight-target="">Action Cog</a></li>
+      <li>Dropdowns:
+        <ul>
+            <li><a href="/documentation/ui-components.html#action-dropdown" class="highlight-source" data-highlight-target="">Action Dropdown</a></li>
+        </ul>
+      </li>
+      <li>Popovers:
+        <ul>
+            <li><a href="/documentation/ui-components.html#popover" class="highlight-source" data-highlight-target="confirm-batch-delete-popover">Batch Action Popovers</a></li>
+            <li><a href="/documentation/ui-components.html#popover" class="highlight-source" data-highlight-target="rename-server-popover-list-view">Action Cog Popovers</a></li>
+            <li><a href="/documentation/ui-components.html#popover" class="highlight-source" data-highlight-target="create-check-popover-list-view">Inline Popovers</a></li>
+        </ul>
+      </li>
+    </ul>
+    <h4>Adherence Rating: 3</h4>
+  </div>
+  <div class="col-md-9">
+    <h3>Content</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Markup</h4>
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="row" id="create-view">
+    <div class="col-md-12">
+      <h1>Create View</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <p>Use this pattern to create a single item or product. The content of the Create View can be broken into 3 main parts:</p>
+    <ol>
+      <li>The <strong>Create Form</strong> allows you to break workflows into sections:
+        <ol>
+          <li><a href="javascript:void(0);" class="highlight-source" data-highlight-target="create-example-identify">Configure the product</a></li>
+          <li><a href="javascript:void(0);" class="highlight-source" data-highlight-target="create-example-select">Select important options</a></li>
+          <li><a href="javascript:void(0);" class="highlight-source" data-highlight-target="create-example-add-related">Add related items</a></li>
+        </ol>
+      </li>
+      <li>The <strong>Right Sidebar</strong> contains help text and links about best practices and next steps for further use or configuration.</li>
+      <li>The <strong>Back link</strong> points to the list view you came from. </li>
+    </ol>
+    <h3>Complex Components:</h3>
+    <ul>
+      <li><a href="/documentation/ui-components.html#details" class="highlight-source" data-highlight-target="create-example-horizontal-form">Details</a></li>
+      <li><a href="/documentation/ui-components.html#forms" class="highlight-source" data-highlight-target="form-highlight-example">Forms</a></li>
+      <li><a href="/documentation/ux-patterns.html#create-view" class="highlight-source" data-highlight-target="create-example-help-sidebar">Help Sidebar</a></li>
+      <li><a href="/documentation/ui-components.html#tabs" class="highlight-source" data-highlight-target="create-example-tabbed-embedded-table">Tabbed Embedded Tables</a></li>
+      <li><a href="/documentation/ui-components.html#details" class="highlight-source" data-highlight-target="create-example-add-related">Collapsible Sections</a></li>
+      <li><a href="/documentation/ui-components.html#tabs" class="highlight-source" data-highlight-target="create-example-embedded-table">Embedded Tables</a>
+      </li>
+    </ul>
+    <h3>Simple Components:</h3>
+    <ul>
+      <li><a href="/documentation/ui-components.html#back-link" class="highlight-source" data-highlight-target="create-example-back-link">Back Link</a></li>
+      <li><a href="/documentation/ui-components.html#popover" class="highlight-source" data-highlight-target="add-items-popover">Popovers</a></li>
+      <li><a href="/documentation/ui-components.html#secondary-buttons" class="highlight-source" data-highlight-target="add-items-button">Secondary Buttons</a></li>
+      <li><a href="/documentation/ui-components.html#button-groups" class="highlight-source" data-highlight-target="create-example-button-group">Button Groups</a></li>
+      <li><a href="/documentation/ui-components.html#primary-buttons" class="highlight-source" data-highlight-target="create-example-primary-button">Primary Buttons</a></li>
+    </ul>
+    <h4>Adherence Rating: 3</h4>
+  </div>
+  <div class="col-md-9">
+    <h3>Content</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Markup</h4>
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="row" id="detail-view">
+    <div class="col-md-12">
+      <h1>Detail View</h1>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3">
+    <p>Use this pattern for details about a single item or product. The content of a detail view can be broken into 3 main parts:</p>
+    <ol>
+      <li>The <strong>Details Component</strong> summarizes the product or item you are viewing. Combine with the components listed below for navigation, status details, and embedded actions.</li>
+      <li>The <strong>Right Sidebar</strong> contains help text and links about managing the product in view.</li>
+      <li>The <strong>Back Link</strong> points to the list view you came from. </li>
+    </ol>
+    <h3>Complex Components:</h3>
+    <ul>
+      <li><a href="/documentation/ui-components.html#details" class="highlight-source" data-highlight-target="detail-example-details-component">Details Component</a></li>
+      <li><a href="/documentation/ui-components.html#embedded-list-table" class="highlight-source" data-highlight-target="detail-example-embedded-list-table">Embedded List Table</a></li>
+      <li><a href="/documentation/ux-patterns/#detail-view" class="highlight-source" data-highlight-target="detail-example-help-sidebar">Help Sidebar</a></li>
+    </ul>
+    <h3>Simple Components:</h3>
+    <ul>
+      <li><a href="/documentation/ui-components.html#back-link" class="highlight-source" data-highlight-target="detail-example-back-link">Back Link</a></li>
+      <li><a href="/documentation/ui-components.html#action-buttons" class="highlight-source" data-highlight-target="detail-example-action-button">Action Button</a></li>
+      <li><a href="/documentation/ui-components.html#status-indicators" class="highlight-source" data-highlight-target="detail-example-status-indicator">Status Indicator</a></li>
+      <li><a href="/documentation/ui-components.html#edit-button" class="highlight-source" data-highlight-target="detail-example-edit-button">Edit Button</a></li>
+      <li><a href="/documentation/ui-components.html#action-cogs" class="highlight-source" data-highlight-target="detail-example-action-cog">Action Cog</a></li>
+      <li>Dropdowns:
+        <ul>
+          <li><a href="/documentation/ui-components.html#action-dropdown" class="highlight-source" data-highlight-target="detail-example-action-button-dropdown">Actions Dropdown</a></li>
+          <li><a href="/documentation/ui-components.html#action-dropdown" class="highlight-source" data-highlight-target="detail-example-action-cog-dropdown">Cog Dropdown</a></li>
+        </ul>
+      </li>
+      <li>Popovers:
+        <ul>
+          <li><a href="/documentation/ui-components.html#popover" class="highlight-source" data-highlight-target="rename-server-popover">Actions Button Popover</a></li>
+          <li><a href="/documentation/ui-components.html#popover" class="highlight-source" data-highlight-target="resize-popover">Item Details Popovers</a></li>
+          <li><a href="/documentation/ui-components.html#popover" class="highlight-source" data-highlight-target="edit-item-popover">Embedded List Popovers</a></li>
+        </ul>
+      </li>
+    </ul>
+    <h4>Adherence Rating: 3</h4>
+  </div>
+  <div class="col-md-9">
+    <h3>Content</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Markup</h4>
+    <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   </section>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
