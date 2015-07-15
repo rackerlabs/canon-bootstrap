@@ -7,7 +7,7 @@ adherence: 2
 ---
 <div class="row">
   <div class="col-md-3">
-		<h3>When to use</h3>
+    <h3>When to use</h3>
     <p>Tabs are used to navigate lists of related content. In forms, they are used to categorize and organize similar content. The count for each list is not required, but feel free to use where appropriate.</p>
     <ul>
       <li>Use when the content for each tab has similar structure (e.g., list tables).</li>
@@ -16,7 +16,7 @@ adherence: 2
       <li>Do not use when the content inside each pane would function just as well in its own separate page.</li>
       <li>Limit to 5-8 sections, depending on the length of each section name.</li>
     </ul>
-		<h4>Adherence Rating: {{ adherence }}</h4>
+    <h4>Adherence Rating: {{ adherence }}</h4>
   </div>
   <div class="col-md-9">
     <h4>Markup</h4>
