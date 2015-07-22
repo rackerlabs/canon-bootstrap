@@ -1,5 +1,13 @@
+<a name="0.5.1"></a>
+## [0.5.1](https://github.com/rackerlabs/canon-bootstrap/compare/v0.5.0...v0.5.1) (2015-09-28)
+
+### Build
+
+* updated release scripts
+
+
 <a name="0.5.0"></a>
-# 0.5.0 (2015-07-08)
+# [0.5.0](https://github.com/rackerlabs/canon-bootstrap/compare/v0.4.0...v0.5.0) (2015-07-08)
 
 
 ### Bug Fixes
@@ -9,12 +17,12 @@
 ### Features
 
 * **buttons:** add .btn-login ([a94d95e](https://github.com/rackerlabs/canon-bootstrap/commit/a94d95e))
-* **release:** automate version bump & changelog ([321decd](https://github.com/rackerlabs/canon-bootstrap/commit/321decd))
+* **release:** automate version bump & changelog ([38a5683](https://github.com/rackerlabs/canon-bootstrap/commit/38a5683))
 
 
 
 <a name="0.4.0"></a>
-# 0.4.0 (2015-02-16)
+# [0.4.0](https://github.com/rackerlabs/canon-bootstrap/compare/v0.3.0...v0.4.0) (2015-02-16)
 
 
 ### Bug Fixes
@@ -24,7 +32,7 @@
 
 
 <a name="0.3.0"></a>
-# 0.3.0 (2014-12-12)
+# [0.3.0](https://github.com/rackerlabs/canon-bootstrap/compare/v0.2.1...v0.3.0) (2014-12-12)
 
 
 ### Bug Fixes
@@ -40,7 +48,17 @@
 
 
 <a name="0.2.1"></a>
-## 0.2.1 (2014-12-10)
+## [0.2.1](https://github.com/rackerlabs/canon-bootstrap/compare/v0.2.0...v0.2.1) (2014-12-10)
+
+
+### Bug Fixes
+
+* **variables:** darken text input color ([70b7b38](https://github.com/rackerlabs/canon-bootstrap/commit/70b7b38))
+
+
+
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/rackerlabs/canon-bootstrap/compare/v0.1.0...v0.2.0) (2014-12-05)
 
 
 ### Bug Fixes
@@ -49,7 +67,6 @@
 * **navbar:** fix link alignment ([4a6ba42](https://github.com/rackerlabs/canon-bootstrap/commit/4a6ba42))
 * **navbar:** restore margin beneath navbar ([1011e94](https://github.com/rackerlabs/canon-bootstrap/commit/1011e94))
 * **typography:** bump line height to 20px ([f9bdc18](https://github.com/rackerlabs/canon-bootstrap/commit/f9bdc18))
-* **variables:** darken text input color ([70b7b38](https://github.com/rackerlabs/canon-bootstrap/commit/70b7b38))
 * **variables.less:** revert state color variables ([d8ebaa9](https://github.com/rackerlabs/canon-bootstrap/commit/d8ebaa9))
 
 ### Features
@@ -63,7 +80,7 @@
 
 
 <a name="0.1.0"></a>
-# 0.1.0 (2014-12-02)
+# [0.1.0](https://github.com/rackerlabs/canon-bootstrap/compare/a135955...v0.1.0) (2014-12-02)
 
 
 ### Features
@@ -71,6 +88,4 @@
 * **base:** first pass at customizing bootstrap variables ([a135955](https://github.com/rackerlabs/canon-bootstrap/commit/a135955))
 * **headers:** use Source Sans Pro for headers ([4d73685](https://github.com/rackerlabs/canon-bootstrap/commit/4d73685))
 * **icons:** update glyphicon settings ([091502e](https://github.com/rackerlabs/canon-bootstrap/commit/091502e))
-
-
 
