@@ -32,7 +32,13 @@ echo "==> Bumping version"
 VERSION="$(node_modules/.bin/mversion $BUMP_TYPE | awk '/version:/ { print $5 }')"
 
 echo "==> Updating Changelog"
-node_modules/.bin/conventional-changelog -b -o CHANGELOG.md -p angular
+node_modules/.bin/conventional-changelog -i CHANGELOG.md -o CHANGELOG.md -p angular
+
+echo "==> Cleaning Build directory"
+node_modules/.bin/gulp clean
+
+echo "==> Creating build files"
+node_modules/.bin/gulp build
 
 echo "==> Committing changes"
 
