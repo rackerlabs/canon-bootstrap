@@ -1,23 +1,23 @@
 ---
-title: Canon Bootstrap - Get Started
+title: UX Patterns
 description: Getting Started Guide
-template: documentation.html
+layout: content.html
 ---
 <nav class="navbar navbar-secondary navbar-collapse collapse" collapse="isCollapsed">
   <div class="container">
     <ul class="nav navbar-nav navbar-left">
-      <li><a href="#">Summary</a></li>
-      <li><a href="#">Navigation Model</a></li>
-      <li><a href="#">List View</a></li>
-      <li><a href="#">Create View</a></li>
-      <li><a href="#">Detail View</a></li>
+      {{#each ux-patterns}}
+        <li><a href="documentation/ux-patterns.html#{{id}}">{{title}}</a></li>
+      {{/each}}
     </ul>
   </div>
 </nav>
 
-<div class="row">
-  <div class="col-md-12">
-    <h1>UX Patterns</h1>
-    <p>Coming Soon</p>
+{{#each ux-patterns}}
+  <div class="row" id="{{id}}">
+    <div class="col-md-12">
+      <h1>{{title}}</h1>
+    </div>
   </div>
-</div>
+  {{{ contents }}}
+{{/each}}

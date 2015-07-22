@@ -80,15 +80,44 @@ gulp.task('build:fonts', function (done) {
 gulp.task('documentation', ['build'], function (done) {
   var join = require('path').join;
   var metalsmith = require('metalsmith');
+  var collections = require('metalsmith-collections');
   var markdown = require('metalsmith-markdown');
-  var templates = require('metalsmith-templates');
+  var metallic = require('metalsmith-metallic');
+  var templates = require('metalsmith-in-place');
+  var layouts = require('metalsmith-layouts');
 
   async.series({
     metalsmith: function (done) {
       metalsmith(join(__dirname, 'docs'))
         .metadata({ baseUri: argv.baseUri })
+        .use(templates({
+          engine: 'handlebars',
+          pattern: 'components/**/*.md'
+        }))
+        .use(metallic())
         .use(markdown())
-        .use(templates('handlebars'))
+        .use(collections({
+          'app-layout': {
+            sortBy: 'index'
+          },
+          'ui-components': {
+            sortBy: 'index'
+          },
+          'ux-patterns': {
+            sortBy: 'index'
+          }
+        }))
+        .use(templates({
+          engine: 'handlebars'
+        }))
+        .use(layouts({
+          engine: 'handlebars',
+          directory: 'templates',
+          partials: {
+              'header': '../src/documentation/partials/header',
+              'primary-nav': '../src/documentation/partials/primary-nav'
+          }
+        }))
         .build(done);
     },
     canon: function (done) {

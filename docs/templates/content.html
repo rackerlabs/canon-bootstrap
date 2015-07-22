@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>{{ title }}</title>
+
+  <meta name="description" content="{{ description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <base href="{{ baseUri }}">
+
+  <link rel="stylesheet" href="css/canon-bootstrap.css">
+  <link rel="stylesheet" href="documentation.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+</head>
+<body>
+  {{> header}}
+
+  <section class="container">
+    {{> primary-nav}}
+
+    {{{ contents }}}
+
+  </section>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
