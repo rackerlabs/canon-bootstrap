@@ -30,8 +30,125 @@ adherance: 2
   </div>
   <div class="col-md-9">
     <h4>Markup</h4>
- ```html
-     <div>Coming soon...</div>
- ```
-  </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th style="width:110px;">Button</th>
+            <th>Class</th>
+            <th>Markup</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <button class="btn btn-primary">Primary</button>
+            </td>
+            <td>rs-btn rs-btn-primary</td>
+            <td>
+              ```html
+                 <button class="btn btn-primary">Primary</button>
+              ```
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="btn btn-secondary">Secondary</button>
+            </td>
+            <td>rs-btn</td>
+            <td>
+              ```html
+                <button class="btn btn-secondary">Secondary</button>
+              ```
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="btn btn-default">
+                 <span class="fa fa-cog"></span> Action <span class="caret"></span>
+              </button>
+            </td>
+            <td>rs-btn rs-btn-action</td>
+            <td>
+              ```html
+      <button type="button" class="btn btn-default">
+        <span class="fa fa-cog"></span>
+        Action
+        <span class="caret"></span>
+      </button>
+              ```
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="btn btn-login">Login</button>
+            </td>
+            <td>rs-btn rs-btn-login</td>
+            <td>
+              ```html
+                <button class="btn btn-login">Login</button>
+              ```
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="btn btn-link">Link</button>
+            </td>
+            <td>rs-btn rs-btn-link</td>
+            <td>
+              ```html
+                <button class="btn btn-link">Link</button>
+              ```
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="fa fa-cog"></button>
+            </td>
+            <td>rs-cog</td>
+            <td>
+              ```html
+                <button class="fa fa-cog"></button>
+              ```
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="fa fa-minus-circle"></button>
+            </td>
+            <td>rs-delete</td>
+            <td>
+              ```html
+              <button class="fa fa-minus-circle"></button>
+              ```
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="fa fa-edit"></button>
+            </td>
+            <td>rs-edit</td>
+            <td>
+              ```html
+                <button class="fa fa-cog"></button>
+              ```
+
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="fa fa-plus-square-o"></button>
+            </td>
+            <td>rs-plus</td>
+            <td>
+              ```html
+              <button class="fa fa-plus-square-o"></button>
+              ```
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
 </div>
