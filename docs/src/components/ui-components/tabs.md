@@ -19,9 +19,87 @@ adherence: 2
     <h4>Adherence Rating: {{ adherence }}</h4>
   </div>
   <div class="col-md-9">
+    <h4>Example</h4>
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a >Home <span class="badge">3</span></a></li>
+      <li role="presentation"><a >Profile <small>(13)</small></a></li>
+      <li role="presentation"><a >Messages <i class="fa fa-question-circle"></i></a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Updated</th>
+              <th>ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Table Item 1</td>
+              <td>Aug 28, 2013</td>
+              <td>123456</td>
+            </tr>
+            <tr>
+              <td>Table Item 2</td>
+              <td>Aug 25, 2013</td>
+              <td>789012</td>
+            </tr>
+            <tr>
+              <td>Table Item 3</td>
+              <td>Jul 14, 2013</td>
+              <td>345678</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane">
+      </div>
+      <div class="tab-pane">
+      </div>
+    </div>
     <h4>Markup</h4>
 ```html
-   <div>Coming soon...</div>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="">Home <span class="badge">3</span></a></li>
+  <li role="presentation"><a href="">Profile <small>(13)</small></a></li>
+  <li role="presentation"><a href="">Messages <i class="fa fa-question-circle"></i></a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Updated</th>
+          <th>ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Table Item 1</td>
+          <td>Aug 28, 2013</td>
+          <td>123456</td>
+        </tr>
+        <tr>
+          <td>Table Item 2</td>
+          <td>Aug 25, 2013</td>
+          <td>789012</td>
+        </tr>
+        <tr>
+          <td>Table Item 3</td>
+          <td>Jul 14, 2013</td>
+          <td>345678</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tab-pane">
+  </div>
+  <div class="tab-pane">
+  </div>
+</div>
 ```
   </div>
 </div>
