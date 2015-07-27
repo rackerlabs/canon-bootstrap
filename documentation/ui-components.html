@@ -331,8 +331,86 @@
     <h4>Adherence Rating: 2</h4>
   </div>
   <div class="col-md-9">
+    <h4>Example</h4>
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a >Home <span class="badge">3</span></a></li>
+      <li role="presentation"><a >Profile <small>(13)</small></a></li>
+      <li role="presentation"><a >Messages <i class="fa fa-question-circle"></i></a></li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane active">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Updated</th>
+              <th>ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Table Item 1</td>
+              <td>Aug 28, 2013</td>
+              <td>123456</td>
+            </tr>
+            <tr>
+              <td>Table Item 2</td>
+              <td>Aug 25, 2013</td>
+              <td>789012</td>
+            </tr>
+            <tr>
+              <td>Table Item 3</td>
+              <td>Jul 14, 2013</td>
+              <td>345678</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-pane">
+      </div>
+      <div class="tab-pane">
+      </div>
+    </div>
     <h4>Markup</h4>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>Coming soon...<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;nav nav-tabs&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;active&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;&quot;</span>&gt;</span>Home <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;badge&quot;</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;&quot;</span>&gt;</span>Profile <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>(13)<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">&quot;presentation&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">&quot;&quot;</span>&gt;</span>Messages <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;fa fa-question-circle&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-content&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane active&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;table&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Updated<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>ID<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Table Item 1<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Aug 28, 2013<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>123456<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Table Item 2<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Aug 25, 2013<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>789012<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Table Item 3<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Jul 14, 2013<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>345678<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;tab-pane&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre>
   </div>
 </div>
 
