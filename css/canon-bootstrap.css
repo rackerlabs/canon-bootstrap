@@ -9165,9 +9165,6 @@ fieldset[disabled] .btn-input.active {
 .rs-panel .rs-sidebar.rs-pull-right .rs-inner {
   margin: 24px;
 }
-.rs-content {
-  padding: 0 24px 24px;
-}
 .rs-content:before,
 .rs-content:after {
   content: " ";
