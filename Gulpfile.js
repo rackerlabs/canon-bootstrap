@@ -6,9 +6,34 @@ var minifyCSS = require('gulp-minify-css');
 var less = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
+var csslint = require('gulp-csslint');
+var data = require('gulp-data');
 var argv = require('yargs')
   .default('baseUri', '/')
   .argv;
+
+var customStyleDelimiter = '/* Include Canon */';
+var customStyleStartingLine = 0;
+var customStyleStartingLineReporter = function(file) {
+  file.csslint.results.forEach(function(result) {
+    var message, c = util.colors;
+    if (result.error.line >= customStyleStartingLine) {
+      message  = result.error;
+      util.log(
+        c.red('[') +
+        (
+          typeof message.line !== 'undefined' ?
+          c.yellow( 'L' + message.line ) +
+          c.red(':') +
+          c.yellow( 'C' + message.col )
+            :
+            c.yellow('GENERAL')
+        ) +
+        c.red('] ') +
+        message.message + ' ' + message.rule.desc + ' (' + message.rule.id + ')');
+    }
+  });
+};
 
 function error(e) {
   util.log(e.toString());
@@ -140,4 +165,21 @@ gulp.task('server', ['documentation'], function () {
 
   return gulp.src('docs/build')
     .pipe(webserver({ livereload: true }));
+});
+
+gulp.task('csslint', ['build'], function(){
+  gulp.src('build/css/canon-bootstrap.css')
+    .pipe(data(function(file) {
+      var content = String(file.contents);
+      var lines = content.split("\n");
+      for(var i = 0; i < lines.length; i++) {
+        if (lines[i].indexOf(customStyleDelimiter) > -1) {
+          customStyleStartingLine = i + 1;
+          break;
+        }
+      }
+      return content;
+    }))
+    .pipe(csslint())
+    .pipe(csslint.reporter(customStyleStartingLineReporter));
 });
